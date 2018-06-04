@@ -1,0 +1,38 @@
+<template name="investor">
+	<div class="box">
+		
+		<div class="heading-bar bg_cyan">
+			Dashboard (Investor)
+	  	</div>
+		<div class="t_content">
+			<div class="row">
+				<div class="col-md-1">Status</div>
+				<div class="col-md-4">Destination</div>
+				<div class="col-md-2">value</div>
+				<div class="col-md-3">Reason</div>
+				<div class="col-md-2">approve</div>
+				
+			</div>
+			{{#each history}}
+				<div class="row">
+					<div class="col-md-1">{{executed}}</div>
+					<div class="col-md-4">{{destination}}</div>
+					<div class="col-md-2">{{value}}</div>
+					<div class="col-md-3">{{reason}}</div>
+					{{#unless executed}}
+					<div class="col-md-2">
+						<button class="confirm-button" value="{{id}}">
+							approve
+						</button>
+					</div>
+					{{/unless}}
+					
+				</div>
+			{{/each}}
+			<br>
+
+		</div>
+
+	</div>
+	
+</template>

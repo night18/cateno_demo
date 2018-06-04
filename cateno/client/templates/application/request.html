@@ -1,0 +1,35 @@
+<template name="request">
+	<div class="box">
+		
+		<div class="heading-bar bg_cyan">
+			Create New Request
+	  	</div>
+		<div class="t_content	">
+			<form>
+				<div class="radio_group">
+					<input type="radio" name="request_type" id="rd_free" value="free"> Free Limit Fund Transfer <br>
+					<input type="radio" name="request_type" id="rd_apvl" value="approval"> Approval Linked Fund Transfer <br>
+					<input type="radio" name="request_type" id="rd_mlst" value="milestone"> Milestone Linked Fund Transfer <br>
+				</div>
+				<div class="request_detail">
+					<span>Receiver Address:</span><br>
+					<input type="text" name="receiver_account" id="receiver_account" placeholder="0x02709c3a27c15193a439d0d54389711aba438f2b" size="42"><br>
+					<span>Amount (Ether):</span><br>
+					<input type="number" step=any name="transfer_amount" id="transfer_amount" placeholder="Enter Amount Upto XXX"><br>
+					<div class="milestone hide">
+						<span>Target:</span><br>
+						<input type="text" name="mlst_target" id="mlst_target" placeholder="Milestone Target">
+					</div>
+					<span>Reason:</span><br>
+					<textarea name="transfer_reason" id="transfer_reason" cols="50" placeholder="Reason"></textarea> 
+				</div>
+
+				<input type="submit" value="Request" class="confirm-button" >
+				
+			</form>
+			<button class="leave-button" style="margin-top: 10px">Back</button>
+			
+		</div>
+
+	</div>
+</template>

@@ -1,0 +1,172 @@
+/* CSS declarations go here */
+html, body{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+table{
+	margin: 10px auto;
+}
+
+textarea{
+	font-size: 16px;
+	margin: 10px auto;
+	height: 200px;
+}
+
+p{
+	margin: 2px auto;
+	text-align: center;
+}
+
+
+.full-screen{
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	display: table;
+}
+
+.center{
+	width: 100%;
+	text-align: center;
+}
+
+#main{
+	margin:0px auto 50px auto;
+	padding-bottom: 5px;
+}
+
+.navbar-header{
+	width: 100%;
+	background-color: #19a1af;
+	text-align: center;
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+
+.page-footer{
+	background-color: #0097a7;
+	position: fixed;
+	width: 100%;
+    bottom: 0;
+    padding: 20px 0 15px 0;
+}
+
+.copyright{
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+.bg_cyan{
+	background-color: #32abb8;
+	color: #FFFFFF;
+}
+
+.cyan-text{
+	color: #006974;
+}
+
+.confirm-button{
+    border: 1px solid #0097a7;
+    padding: 13px 22px;
+    line-height: 0px;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0097a7;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.update-button{
+    border: 1px solid #D19019;
+    padding: 13px 22px;
+    line-height: 0px;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D19019;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.leave-button{
+    border: 1px solid #97a6a8;
+    padding: 13px 22px;
+    line-height: 0px;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #97a6a8;
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.box{
+	width: auto;
+	margin: 10px;
+	text-align: center;
+	height: 600px;
+	overflow:auto;
+}
+
+.heading-bar{
+    padding: 0 10px;
+    height: 37px;
+    line-height: 38px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.t_content{
+	height: 563px;
+	padding: 20px 10px 8px 10px;
+	background-color: #e5f4f6;
+	border: 1px solid #32abb8;
+	font-size: 16px;
+}
+
+.text_center{
+	text-align: center;
+}
+
+/*============Login==============*/
+.loginbox{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*============Login==============*/
+.radio_group{
+	width: 30%;
+	text-align: left;
+	margin: 10px auto;
+}
+
+.request_detail{
+	margin: 20px auto;
+}
+
+.milestone{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
