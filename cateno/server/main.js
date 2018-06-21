@@ -6,8 +6,8 @@ let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 web3.eth.net.isListening().then(console.log);
 Future = Npm.require('fibers/future')	
 
-var account0 = "0xa9f64fe1c99c1bb316eae97be90ce35db2d105bc";
-var account1 = "0xfa61f9280de613a4b5b91c385739fc6a54d0f389";
+var account0 = "0xaeb6d2343f71217d382c1523265bd4b1567d0db1";
+var account1 = "0xf7f0353364c7551abc63549aa886caf53f693e70";
 
 
 Meteor.startup(() => {
