@@ -256,7 +256,7 @@ Meteor.startup(() => {
 			var futs = _.map(indexArray,function(item, index){
 				var fut = new Future();
 				var onComplete = fut.resolver();
-
+				console.log(sender);
 				dailyWallet.methods.transactions(item).call({from: sender}, function(err,result){
 					if(err){
 						console.error(err);
