@@ -27,6 +27,7 @@ Meteor.startup(() => {
      					fut.return(cb);
      				}
      			});
+     			console.log("!!!");
      			return fut.wait();
 			}else if(name == "investor"){
 				
