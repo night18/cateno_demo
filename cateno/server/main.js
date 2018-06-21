@@ -126,7 +126,7 @@ Meteor.startup(() => {
 			var fut = new Future();
 			var sender = account0;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
-
+			console.log(sender);
 			dailyWallet.methods.updatePrice()
 			.send({
 				from: sender,
@@ -257,7 +257,7 @@ Meteor.startup(() => {
 			var futs = _.map(indexArray,function(item, index){
 				var fut = new Future();
 				var onComplete = fut.resolver();
-				console.log(sender);
+				
 				dailyWallet.methods.transactions(item).call({from: sender}, function(err,result){
 					if(err){
 						console.error(err);
