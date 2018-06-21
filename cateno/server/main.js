@@ -6,8 +6,8 @@ let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 web3.eth.net.isListening().then(console.log);
 Future = Npm.require('fibers/future')	
 
-var account0 = "0xaeb6d2343f71217d382c1523265bd4b1567d0db1";
-var account1 = "0xf7f0353364c7551abc63549aa886caf53f693e70";
+var account0 = "0xaEb6D2343f71217d382C1523265bD4B1567D0dB1";
+var account1 = "0xf7F0353364c7551Abc63549aA886CAF53F693E70";
 
 
 Meteor.startup(() => {
@@ -246,7 +246,7 @@ Meteor.startup(() => {
 
 		'showHistory': function(trans_num){
 			var indexArray = [];
-			var sender = account1;
+			var sender = account0;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
 			for(var i = 0 ; i < trans_num ; i++){
 				
