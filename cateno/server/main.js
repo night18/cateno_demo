@@ -4,10 +4,10 @@ import multisigDailyLimitABI from './contract/multiSigDailyLimit.json';
 
 let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 web3.eth.net.isListening().then(console.log);
-Future = Npm.require('fibers/future')	
+Future = Npm.require('fibers/future')
 
-var account0 = "0xa9f64fe1c99c1bb316eae97be90ce35db2d105bc";
-var account1 = "0xfa61f9280de613a4b5b91c385739fc6a54d0f389";
+var account0 = "0xdb5cd3393b2cadce79f4a01331a5f6023e971de0";
+var account1 = "0x0ff7545bd761f4a0f3328e0ed762477ea8917c97";
 
 
 Meteor.startup(() => {
@@ -15,7 +15,7 @@ Meteor.startup(() => {
 
 	Meteor.methods({
 		'getEthAddress': function(name){
-			
+
   			var fut = new Future();
 			if(name == "company"){
 				// fut.return({getEthAddress:web3.eth.coinbase});
@@ -29,7 +29,7 @@ Meteor.startup(() => {
      			});
      			return fut.wait();
 			}else if(name == "investor"){
-				
+
 			}
 		},
 		'deployWallet':function(){
@@ -40,7 +40,7 @@ Meteor.startup(() => {
  			let multisigwalletwithdailylimitContract = new web3.eth.Contract(multisigDailyLimitABI.abi);
  			// console.log(multisigDailyLimitABI.binHx);
  			multisigwalletwithdailylimitContract.deploy({
- 				data: multisigDailyLimitABI.binHx, 
+ 				data: multisigDailyLimitABI.binHx,
  				arguments: [_executor, _supervisors, _required, _dailyLimit]
  			})
 			.send({
@@ -68,7 +68,7 @@ Meteor.startup(() => {
 
 		'submitTransaction': function(amount, receiver, reason ){
 			var fut = new Future();
-			var amountInWei = web3.utils.toWei(amount, "ether"); 
+			var amountInWei = web3.utils.toWei(amount, "ether");
 			var sender = account0;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
 
@@ -95,7 +95,7 @@ Meteor.startup(() => {
 
 		'settingMilestone': function(amount, receiver, reason, milestone){
 			var fut = new Future();
-			var amountInWei = web3.utils.toWei(amount, "ether"); 
+			var amountInWei = web3.utils.toWei(amount, "ether");
 			var sender = account0;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
 			console.log(Number(milestone))
@@ -162,10 +162,10 @@ Meteor.startup(() => {
 
 		'requestWithOutLimit': function(amount, receiver, reason ){
 			var fut = new Future();
-			var amountInWei = web3.utils.toWei(amount, "ether"); 
+			var amountInWei = web3.utils.toWei(amount, "ether");
 			var sender = account0;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
-			
+
 			dailyWallet.methods.submitTransaction(receiver, amountInWei, web3.utils.asciiToHex(""), web3.utils.asciiToHex(reason))
 			.send({
 				from: sender,
@@ -235,13 +235,13 @@ Meteor.startup(() => {
 				console.log(trans_num);
 				if(trans_num && trans_num != 0){
 					fut.return(trans_num);
-					
-						
+
+
 				}else {
 					fut.throw("No history found");
 				}
-			});	
-			return fut.wait();	 
+			});
+			return fut.wait();
 		},
 
 		'showHistory': function(trans_num){
@@ -249,7 +249,7 @@ Meteor.startup(() => {
 			var sender = account1;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
 			for(var i = 0 ; i < trans_num ; i++){
-				
+
 				indexArray.push(i);
 			}
 

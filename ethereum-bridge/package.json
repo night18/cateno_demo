@@ -7,14 +7,14 @@
     "ethereum-bridge": "bridge.js"
   },
   "keywords": [
-      "oraclize",
-      "provable",
-      "blockchain",
-      "bridge",
-      "ethereum",
-      "rootstock",
-      "evm",
-      "data carrier"
+    "oraclize",
+    "provable",
+    "blockchain",
+    "bridge",
+    "ethereum",
+    "rootstock",
+    "evm",
+    "data carrier"
   ],
   "dependencies": {
     "async": "^2.4.1",
