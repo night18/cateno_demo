@@ -164,3 +164,146 @@
 []
 {"level":"debug","message":"reorg block target: 393","timestamp":"2018-06-23T09:24:36.951Z"}
 {"level":"debug","message":"reorg, fetching logs from-to: 393","timestamp":"2018-06-23T09:24:37.324Z"}
+{"defaultnode":"http://localhost:8545","instance":"oracle_instance_20180622T061241.json","gas":3700000,"confirmation":12,"disable-deterministic-oar":false,"loglevel":"info","non-interactive":false,"enable-stats":false,"no-hints":false,"gasprice":20000000000,"logFilePath":"./bridge.log","confirmations":12,"defaultGas":3700000,"level":"debug","message":"parsed options","timestamp":"2018-06-23T09:41:20.821Z"}
+{"level":"info","message":"you are running ethereum-bridge - version: 0.6.0-beta.1","timestamp":"2018-06-23T09:41:20.834Z"}
+{"level":"info","message":"saving logs to: ./bridge.log","timestamp":"2018-06-23T09:41:20.835Z"}
+["oracle_instance_20180622T061241.json"]
+{"level":"info","message":"using active mode","timestamp":"2018-06-23T09:41:20.836Z"}
+{"level":"info","message":"Connecting to eth node http://localhost:8545","timestamp":"2018-06-23T09:41:20.836Z"}
+{"level":"info","message":"using oracle_instance_20180622T061241.json oracle configuration file","timestamp":"2018-06-23T09:41:20.840Z"}
+{"result":{"quotes":{"ETH":0.00000277,"USD":0.001,"BTC":2.3e-7,"EUR":0.0008264},"deployments":{"ethereum":{"public-kovan":{"addressResolver":"0xB7A07BcF2Ba2f2703b24C0691b5278999C59AC7e"},"public-mainnet":{"addressResolver":"0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed"},"public-ropsten3":{"addressResolver":"0xc03A2615D5efaf5F49F60B7BB6583eaec212fdf1"},"public-rinkeby":{"addressResolver":"0x146500cfd35B22E4A392Fe0aDc06De1a1368Ed48"}}},"distributions":{"rootstock-bridge":{"motd":"","latest":{"version":"0.5.4"}},"eris-bridge":{"motd":"","latest":{"version":"0.1.0"}},"blockapps-bridge":{"motd":"","latest":{"version":"0.5.4"}},"ethereum-bridge":{"motd":"","latest":{"version":"0.5.4"}}},"datasources":{"random":{"sessionPubKeysHash":["0xd937716ea46c0fb8f804f392eb5e00c2667262d1842017eae4f2202943ec1782"]}},"pricing":{"proofs":{"0":{"units":0,"description":"None"},"16":{"units":40,"description":"TLSNotary"},"32":{"units":40,"description":"Android"},"48":{"units":0,"description":"Ledger"}},"datasources":[{"units":10,"proof_types":[0],"name":"IPFS"},{"units":10,"proof_types":[0],"name":"swarm"},{"units":10,"proof_types":[0,16,32],"name":"URL"},{"units":10,"proof_types":[0],"name":"Blockchain"},{"units":10,"proof_types":[0,16,32],"name":"nested"},{"units":30,"proof_types":[0],"name":"WolframAlpha"},{"units":500,"proof_types":[0,16,32],"name":"computation"},{"units":50,"proof_types":[0,48],"name":"random"}]}},"success":true,"level":"debug","message":"check bridge version body result","timestamp":"2018-06-23T09:41:21.607Z"}
+{"context_name":"eth_AB0D46C279","latest_block_number":36,"oar":"0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475","node":{"main":"http://localhost:8545","backup":[]},"contracts":{"connector":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/oraclizeConnector.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/oraclizeConnector.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/oraclizeConnector.sol"},"oar":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/addressResolver.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/addressResolver.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/addressResolver.sol"}},"deterministic_oar":true,"deploy_gas":3700000,"account":"0x69081cd1f45afcd26290a8f911392aa7a1034938","mode":"active","key_file":"/home/ec2-user/cateno_demo/ethereum-bridge/config/instance/keys.json","gas_price":20000000000,"onchain_config":{"pricing":[{"name":"IPFS","proof":0,"units":10},{"name":"IPFS","proof":1,"units":10},{"name":"swarm","proof":0,"units":10},{"name":"swarm","proof":1,"units":10},{"name":"URL","proof":0,"units":10},{"name":"URL","proof":1,"units":10},{"name":"URL","proof":16,"units":50},{"name":"URL","proof":17,"units":50},{"name":"URL","proof":32,"units":50},{"name":"URL","proof":33,"units":50},{"name":"Blockchain","proof":0,"units":10},{"name":"Blockchain","proof":1,"units":10},{"name":"nested","proof":0,"units":10},{"name":"nested","proof":1,"units":10},{"name":"nested","proof":16,"units":50},{"name":"nested","proof":17,"units":50},{"name":"nested","proof":32,"units":50},{"name":"nested","proof":33,"units":50},{"name":"WolframAlpha","proof":0,"units":30},{"name":"WolframAlpha","proof":1,"units":30},{"name":"computation","proof":0,"units":500},{"name":"computation","proof":1,"units":500},{"name":"computation","proof":16,"units":540},{"name":"computation","proof":17,"units":540},{"name":"computation","proof":32,"units":540},{"name":"computation","proof":33,"units":540},{"name":"random","proof":0,"units":50},{"name":"random","proof":1,"units":50},{"name":"random","proof":48,"units":50},{"name":"random","proof":49,"units":50}],"base_price":0.00000277},"connector":"0xb70fd034d12208e5a837a8f113811a3165951c42","level":"debug","message":"configuration file","timestamp":"2018-06-23T09:41:21.618Z"}
+{"level":"info","message":"connected to node type Geth/cateno_demo/v1.8.9-unstable-d6ed2f67/linux-amd64/go1.10.2","timestamp":"2018-06-23T09:41:22.666Z"}
+{"level":"warn","message":"Using 0x69081cd1f45afcd26290a8f911392aa7a1034938 to query contracts on your blockchain, make sure it is unlocked and do not use the same address to deploy your contracts","timestamp":"2018-06-23T09:41:24.206Z"}
+{"level":"info","message":"OAR found: 0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475","timestamp":"2018-06-23T09:41:24.206Z"}
+{"level":"info","message":"connector found: 0xb70fd034d12208e5a837a8f113811a3165951c42","timestamp":"2018-06-23T09:41:24.206Z"}
+{"level":"info","message":"callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-06-23T09:41:24.206Z"}
+{"level":"info","message":"you are using a deterministic OAR, you don't need to update your contract","timestamp":"2018-06-23T09:41:24.208Z"}
+{"level":"debug","message":"starting the bridge log manager...","timestamp":"2018-06-23T09:41:24.208Z"}
+{"level":"debug","message":"latest block seen (config file) 36","timestamp":"2018-06-23T09:41:24.208Z"}
+{"level":"debug","message":"running reorgListen","timestamp":"2018-06-23T09:41:24.435Z"}
+{"level":"info","message":"Listening @ 0xb70fd034d12208e5a837a8f113811a3165951c42 (Oraclize Connector)\n","timestamp":"2018-06-23T09:41:24.436Z"}
+{"level":"info","message":"latest block seen: 37 - processing 830 new blocks","timestamp":"2018-06-23T09:41:24.641Z"}
+{"level":"info","message":"fetching pending queries from database with oar: 0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475 and callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-06-23T09:41:24.870Z"}
+{"level":"info","message":"found a total of 0 pending queries","timestamp":"2018-06-23T09:41:24.929Z"}
+{"level":"debug","message":"reorg block target: 843","timestamp":"2018-06-23T09:41:54.437Z"}
+{"level":"debug","message":"reorg block target: 843","timestamp":"2018-06-23T09:42:24.610Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 843","timestamp":"2018-06-23T09:42:24.964Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:42:24.968Z"}
+[]
+{"level":"debug","message":"reorg block target: 844","timestamp":"2018-06-23T09:42:54.968Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 844","timestamp":"2018-06-23T09:42:55.327Z"}
+{"level":"debug","message":"reorg block target: 845","timestamp":"2018-06-23T09:43:25.338Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 845","timestamp":"2018-06-23T09:43:25.678Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:43:25.680Z"}
+[]
+{"level":"debug","message":"reorg block target: 846","timestamp":"2018-06-23T09:43:55.680Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 846","timestamp":"2018-06-23T09:43:56.025Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:44:26.022Z"}
+{"level":"debug","message":"reorg block target: 847","timestamp":"2018-06-23T09:44:26.375Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 847","timestamp":"2018-06-23T09:44:26.741Z"}
+[]
+{"level":"debug","message":"reorg block target: 848","timestamp":"2018-06-23T09:44:56.743Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 848","timestamp":"2018-06-23T09:44:57.093Z"}
+{"defaultnode":"http://localhost:8545","instance":"oracle_instance_20180622T061241.json","gas":3700000,"confirmation":12,"disable-deterministic-oar":false,"loglevel":"info","non-interactive":false,"enable-stats":false,"no-hints":false,"gasprice":20000000000,"logFilePath":"./bridge.log","confirmations":12,"defaultGas":3700000,"level":"debug","message":"parsed options","timestamp":"2018-06-23T09:47:46.504Z"}
+{"level":"info","message":"you are running ethereum-bridge - version: 0.6.0-beta.1","timestamp":"2018-06-23T09:47:46.516Z"}
+{"level":"info","message":"saving logs to: ./bridge.log","timestamp":"2018-06-23T09:47:46.517Z"}
+["oracle_instance_20180622T061241.json"]
+{"level":"info","message":"using active mode","timestamp":"2018-06-23T09:47:46.518Z"}
+{"level":"info","message":"Connecting to eth node http://localhost:8545","timestamp":"2018-06-23T09:47:46.518Z"}
+{"level":"info","message":"using oracle_instance_20180622T061241.json oracle configuration file","timestamp":"2018-06-23T09:47:46.526Z"}
+{"result":{"quotes":{"ETH":0.00000277,"USD":0.001,"BTC":2.3e-7,"EUR":0.0008264},"deployments":{"ethereum":{"public-kovan":{"addressResolver":"0xB7A07BcF2Ba2f2703b24C0691b5278999C59AC7e"},"public-mainnet":{"addressResolver":"0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed"},"public-ropsten3":{"addressResolver":"0xc03A2615D5efaf5F49F60B7BB6583eaec212fdf1"},"public-rinkeby":{"addressResolver":"0x146500cfd35B22E4A392Fe0aDc06De1a1368Ed48"}}},"distributions":{"rootstock-bridge":{"motd":"","latest":{"version":"0.5.4"}},"eris-bridge":{"motd":"","latest":{"version":"0.1.0"}},"blockapps-bridge":{"motd":"","latest":{"version":"0.5.4"}},"ethereum-bridge":{"motd":"","latest":{"version":"0.5.4"}}},"datasources":{"random":{"sessionPubKeysHash":["0xd937716ea46c0fb8f804f392eb5e00c2667262d1842017eae4f2202943ec1782"]}},"pricing":{"proofs":{"0":{"units":0,"description":"None"},"16":{"units":40,"description":"TLSNotary"},"32":{"units":40,"description":"Android"},"48":{"units":0,"description":"Ledger"}},"datasources":[{"units":10,"proof_types":[0],"name":"IPFS"},{"units":10,"proof_types":[0],"name":"swarm"},{"units":10,"proof_types":[0,16,32],"name":"URL"},{"units":10,"proof_types":[0],"name":"Blockchain"},{"units":10,"proof_types":[0,16,32],"name":"nested"},{"units":30,"proof_types":[0],"name":"WolframAlpha"},{"units":500,"proof_types":[0,16,32],"name":"computation"},{"units":50,"proof_types":[0,48],"name":"random"}]}},"success":true,"level":"debug","message":"check bridge version body result","timestamp":"2018-06-23T09:47:47.243Z"}
+{"context_name":"eth_AB0D46C279","latest_block_number":36,"oar":"0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475","node":{"main":"http://localhost:8545","backup":[]},"contracts":{"connector":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/oraclizeConnector.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/oraclizeConnector.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/oraclizeConnector.sol"},"oar":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/addressResolver.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/addressResolver.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/addressResolver.sol"}},"deterministic_oar":true,"deploy_gas":3700000,"account":"0x69081cd1f45afcd26290a8f911392aa7a1034938","mode":"active","key_file":"/home/ec2-user/cateno_demo/ethereum-bridge/config/instance/keys.json","gas_price":20000000000,"onchain_config":{"pricing":[{"name":"IPFS","proof":0,"units":10},{"name":"IPFS","proof":1,"units":10},{"name":"swarm","proof":0,"units":10},{"name":"swarm","proof":1,"units":10},{"name":"URL","proof":0,"units":10},{"name":"URL","proof":1,"units":10},{"name":"URL","proof":16,"units":50},{"name":"URL","proof":17,"units":50},{"name":"URL","proof":32,"units":50},{"name":"URL","proof":33,"units":50},{"name":"Blockchain","proof":0,"units":10},{"name":"Blockchain","proof":1,"units":10},{"name":"nested","proof":0,"units":10},{"name":"nested","proof":1,"units":10},{"name":"nested","proof":16,"units":50},{"name":"nested","proof":17,"units":50},{"name":"nested","proof":32,"units":50},{"name":"nested","proof":33,"units":50},{"name":"WolframAlpha","proof":0,"units":30},{"name":"WolframAlpha","proof":1,"units":30},{"name":"computation","proof":0,"units":500},{"name":"computation","proof":1,"units":500},{"name":"computation","proof":16,"units":540},{"name":"computation","proof":17,"units":540},{"name":"computation","proof":32,"units":540},{"name":"computation","proof":33,"units":540},{"name":"random","proof":0,"units":50},{"name":"random","proof":1,"units":50},{"name":"random","proof":48,"units":50},{"name":"random","proof":49,"units":50}],"base_price":0.00000277},"connector":"0xb70fd034d12208e5a837a8f113811a3165951c42","level":"debug","message":"configuration file","timestamp":"2018-06-23T09:47:47.253Z"}
+{"level":"info","message":"connected to node type Geth/cateno_demo/v1.8.9-unstable-d6ed2f67/linux-amd64/go1.10.2","timestamp":"2018-06-23T09:47:48.279Z"}
+{"level":"warn","message":"Using 0x69081cd1f45afcd26290a8f911392aa7a1034938 to query contracts on your blockchain, make sure it is unlocked and do not use the same address to deploy your contracts","timestamp":"2018-06-23T09:47:49.638Z"}
+{"level":"info","message":"OAR found: 0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475","timestamp":"2018-06-23T09:47:49.638Z"}
+{"level":"info","message":"connector found: 0xb70fd034d12208e5a837a8f113811a3165951c42","timestamp":"2018-06-23T09:47:49.638Z"}
+{"level":"info","message":"callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-06-23T09:47:49.645Z"}
+{"level":"info","message":"you are using a deterministic OAR, you don't need to update your contract","timestamp":"2018-06-23T09:47:49.647Z"}
+{"level":"debug","message":"starting the bridge log manager...","timestamp":"2018-06-23T09:47:49.647Z"}
+{"level":"debug","message":"latest block seen (config file) 36","timestamp":"2018-06-23T09:47:49.647Z"}
+{"level":"debug","message":"running reorgListen","timestamp":"2018-06-23T09:47:49.844Z"}
+{"level":"info","message":"Listening @ 0xb70fd034d12208e5a837a8f113811a3165951c42 (Oraclize Connector)\n","timestamp":"2018-06-23T09:47:49.845Z"}
+{"level":"info","message":"latest block seen: 37 - processing 927 new blocks","timestamp":"2018-06-23T09:47:50.040Z"}
+{"level":"info","message":"fetching pending queries from database with oar: 0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475 and callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-06-23T09:47:50.228Z"}
+{"level":"info","message":"found a total of 0 pending queries","timestamp":"2018-06-23T09:47:50.256Z"}
+{"level":"debug","message":"reorg block target: 940","timestamp":"2018-06-23T09:48:19.845Z"}
+{"level":"debug","message":"reorg block target: 940","timestamp":"2018-06-23T09:48:49.987Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 940","timestamp":"2018-06-23T09:48:50.334Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:48:50.339Z"}
+[]
+{"level":"debug","message":"reorg block target: 941","timestamp":"2018-06-23T09:49:20.338Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 941","timestamp":"2018-06-23T09:49:20.709Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:49:50.683Z"}
+{"level":"debug","message":"reorg block target: 942","timestamp":"2018-06-23T09:49:51.008Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 942","timestamp":"2018-06-23T09:49:51.312Z"}
+[]
+{"level":"debug","message":"reorg block target: 943","timestamp":"2018-06-23T09:50:21.314Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 943","timestamp":"2018-06-23T09:50:21.683Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:50:51.008Z"}
+[]
+{"level":"debug","message":"reorg block target: 944","timestamp":"2018-06-23T09:50:51.686Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 944","timestamp":"2018-06-23T09:50:52.001Z"}
+{"level":"debug","message":"reorg block target: 945","timestamp":"2018-06-23T09:51:22.004Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 945","timestamp":"2018-06-23T09:51:22.382Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:51:51.298Z"}
+[]
+{"level":"debug","message":"reorg block target: 946","timestamp":"2018-06-23T09:51:52.385Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 946","timestamp":"2018-06-23T09:51:52.754Z"}
+{"defaultnode":"http://localhost:8545","instance":"oracle_instance_20180622T061241.json","gas":3700000,"confirmation":12,"disable-deterministic-oar":false,"loglevel":"info","non-interactive":false,"enable-stats":false,"no-hints":false,"gasprice":20000000000,"logFilePath":"./bridge.log","confirmations":12,"defaultGas":3700000,"level":"debug","message":"parsed options","timestamp":"2018-06-23T09:52:23.150Z"}
+{"level":"info","message":"you are running ethereum-bridge - version: 0.6.0-beta.1","timestamp":"2018-06-23T09:52:23.164Z"}
+{"level":"info","message":"saving logs to: ./bridge.log","timestamp":"2018-06-23T09:52:23.164Z"}
+["oracle_instance_20180622T061241.json"]
+{"level":"info","message":"using active mode","timestamp":"2018-06-23T09:52:23.165Z"}
+{"level":"info","message":"Connecting to eth node http://localhost:8545","timestamp":"2018-06-23T09:52:23.166Z"}
+{"level":"info","message":"using oracle_instance_20180622T061241.json oracle configuration file","timestamp":"2018-06-23T09:52:23.170Z"}
+{"result":{"quotes":{"ETH":0.00000277,"USD":0.001,"BTC":2.3e-7,"EUR":0.0008264},"deployments":{"ethereum":{"public-kovan":{"addressResolver":"0xB7A07BcF2Ba2f2703b24C0691b5278999C59AC7e"},"public-mainnet":{"addressResolver":"0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed"},"public-ropsten3":{"addressResolver":"0xc03A2615D5efaf5F49F60B7BB6583eaec212fdf1"},"public-rinkeby":{"addressResolver":"0x146500cfd35B22E4A392Fe0aDc06De1a1368Ed48"}}},"distributions":{"rootstock-bridge":{"motd":"","latest":{"version":"0.5.4"}},"eris-bridge":{"motd":"","latest":{"version":"0.1.0"}},"blockapps-bridge":{"motd":"","latest":{"version":"0.5.4"}},"ethereum-bridge":{"motd":"","latest":{"version":"0.5.4"}}},"datasources":{"random":{"sessionPubKeysHash":["0xd937716ea46c0fb8f804f392eb5e00c2667262d1842017eae4f2202943ec1782"]}},"pricing":{"proofs":{"0":{"units":0,"description":"None"},"16":{"units":40,"description":"TLSNotary"},"32":{"units":40,"description":"Android"},"48":{"units":0,"description":"Ledger"}},"datasources":[{"units":10,"proof_types":[0],"name":"IPFS"},{"units":10,"proof_types":[0],"name":"swarm"},{"units":10,"proof_types":[0,16,32],"name":"URL"},{"units":10,"proof_types":[0],"name":"Blockchain"},{"units":10,"proof_types":[0,16,32],"name":"nested"},{"units":30,"proof_types":[0],"name":"WolframAlpha"},{"units":500,"proof_types":[0,16,32],"name":"computation"},{"units":50,"proof_types":[0,48],"name":"random"}]}},"success":true,"level":"debug","message":"check bridge version body result","timestamp":"2018-06-23T09:52:23.772Z"}
+{"context_name":"eth_AB0D46C279","latest_block_number":36,"oar":"0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475","node":{"main":"http://localhost:8545","backup":[]},"contracts":{"connector":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/oraclizeConnector.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/oraclizeConnector.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/oraclizeConnector.sol"},"oar":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/addressResolver.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/addressResolver.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/addressResolver.sol"}},"deterministic_oar":true,"deploy_gas":3700000,"account":"0x69081cd1f45afcd26290a8f911392aa7a1034938","mode":"active","key_file":"/home/ec2-user/cateno_demo/ethereum-bridge/config/instance/keys.json","gas_price":20000000000,"onchain_config":{"pricing":[{"name":"IPFS","proof":0,"units":10},{"name":"IPFS","proof":1,"units":10},{"name":"swarm","proof":0,"units":10},{"name":"swarm","proof":1,"units":10},{"name":"URL","proof":0,"units":10},{"name":"URL","proof":1,"units":10},{"name":"URL","proof":16,"units":50},{"name":"URL","proof":17,"units":50},{"name":"URL","proof":32,"units":50},{"name":"URL","proof":33,"units":50},{"name":"Blockchain","proof":0,"units":10},{"name":"Blockchain","proof":1,"units":10},{"name":"nested","proof":0,"units":10},{"name":"nested","proof":1,"units":10},{"name":"nested","proof":16,"units":50},{"name":"nested","proof":17,"units":50},{"name":"nested","proof":32,"units":50},{"name":"nested","proof":33,"units":50},{"name":"WolframAlpha","proof":0,"units":30},{"name":"WolframAlpha","proof":1,"units":30},{"name":"computation","proof":0,"units":500},{"name":"computation","proof":1,"units":500},{"name":"computation","proof":16,"units":540},{"name":"computation","proof":17,"units":540},{"name":"computation","proof":32,"units":540},{"name":"computation","proof":33,"units":540},{"name":"random","proof":0,"units":50},{"name":"random","proof":1,"units":50},{"name":"random","proof":48,"units":50},{"name":"random","proof":49,"units":50}],"base_price":0.00000277},"connector":"0xb70fd034d12208e5a837a8f113811a3165951c42","level":"debug","message":"configuration file","timestamp":"2018-06-23T09:52:23.782Z"}
+{"level":"info","message":"connected to node type Geth/cateno_demo/v1.8.9-unstable-d6ed2f67/linux-amd64/go1.10.2","timestamp":"2018-06-23T09:52:24.774Z"}
+{"level":"warn","message":"Using 0x69081cd1f45afcd26290a8f911392aa7a1034938 to query contracts on your blockchain, make sure it is unlocked and do not use the same address to deploy your contracts","timestamp":"2018-06-23T09:52:26.073Z"}
+{"level":"info","message":"OAR found: 0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475","timestamp":"2018-06-23T09:52:26.073Z"}
+{"level":"info","message":"connector found: 0xb70fd034d12208e5a837a8f113811a3165951c42","timestamp":"2018-06-23T09:52:26.074Z"}
+{"level":"info","message":"callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-06-23T09:52:26.074Z"}
+{"level":"info","message":"you are using a deterministic OAR, you don't need to update your contract","timestamp":"2018-06-23T09:52:26.076Z"}
+{"level":"debug","message":"starting the bridge log manager...","timestamp":"2018-06-23T09:52:26.076Z"}
+{"level":"debug","message":"latest block seen (config file) 36","timestamp":"2018-06-23T09:52:26.077Z"}
+{"level":"debug","message":"running reorgListen","timestamp":"2018-06-23T09:52:26.272Z"}
+{"level":"info","message":"Listening @ 0xb70fd034d12208e5a837a8f113811a3165951c42 (Oraclize Connector)\n","timestamp":"2018-06-23T09:52:26.272Z"}
+{"level":"info","message":"latest block seen: 37 - processing 1017 new blocks","timestamp":"2018-06-23T09:52:26.496Z"}
+{"level":"info","message":"fetching pending queries from database with oar: 0x6f485c8bf6fc43ea212e93bbf8ce046c7f1cb475 and callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-06-23T09:52:26.687Z"}
+{"level":"info","message":"found a total of 0 pending queries","timestamp":"2018-06-23T09:52:26.754Z"}
+{"level":"debug","message":"reorg block target: 1030","timestamp":"2018-06-23T09:52:56.272Z"}
+{"level":"debug","message":"reorg block target: 1030","timestamp":"2018-06-23T09:53:26.445Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1030","timestamp":"2018-06-23T09:53:26.785Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:53:26.791Z"}
+[]
+{"level":"debug","message":"reorg block target: 1031","timestamp":"2018-06-23T09:53:56.790Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1031","timestamp":"2018-06-23T09:53:57.149Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:54:27.152Z"}
+{"level":"debug","message":"reorg block target: 1032","timestamp":"2018-06-23T09:54:27.341Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1032","timestamp":"2018-06-23T09:54:27.517Z"}
+[]
+{"level":"debug","message":"reorg block target: 1033","timestamp":"2018-06-23T09:54:57.519Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1033","timestamp":"2018-06-23T09:54:57.869Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:55:27.341Z"}
+[]
+{"level":"debug","message":"reorg block target: 1034","timestamp":"2018-06-23T09:55:27.873Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1034","timestamp":"2018-06-23T09:55:28.187Z"}
+{"level":"debug","message":"reorg block target: 1035","timestamp":"2018-06-23T09:55:58.189Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1035","timestamp":"2018-06-23T09:55:58.517Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:56:27.687Z"}
+[]
+{"level":"debug","message":"reorg block target: 1036","timestamp":"2018-06-23T09:56:28.520Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1036","timestamp":"2018-06-23T09:56:28.850Z"}
+{"level":"debug","message":"reorg block target: 1037","timestamp":"2018-06-23T09:56:58.855Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1037","timestamp":"2018-06-23T09:56:59.196Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:57:28.006Z"}
+[]
+{"level":"debug","message":"reorg block target: 1038","timestamp":"2018-06-23T09:57:29.199Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1038","timestamp":"2018-06-23T09:57:29.538Z"}
+{"level":"debug","message":"reorg block target: 1039","timestamp":"2018-06-23T09:57:59.540Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1039","timestamp":"2018-06-23T09:57:59.890Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-23T09:58:28.331Z"}
+[]
+{"level":"debug","message":"reorg block target: 1040","timestamp":"2018-06-23T09:58:29.892Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 1040","timestamp":"2018-06-23T09:58:30.276Z"}

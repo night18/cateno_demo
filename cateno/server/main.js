@@ -6,8 +6,8 @@ let web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
 web3.eth.net.isListening().then(console.log);
 Future = Npm.require('fibers/future')
 
-var account0 = "0xdb5cd3393b2cadce79f4a01331a5f6023e971de0";
-var account1 = "0x0ff7545bd761f4a0f3328e0ed762477ea8917c97";
+var account0 = "0xaEb6D2343f71217d382C1523265bD4B1567D0dB1";
+var account1 = "0xf7F0353364c7551Abc63549aA886CAF53F693E70";
 
 
 Meteor.startup(() => {
@@ -27,6 +27,7 @@ Meteor.startup(() => {
      					fut.return(cb);
      				}
      			});
+     			console.log("!!!");
      			return fut.wait();
 			}else if(name == "investor"){
 
@@ -125,7 +126,8 @@ Meteor.startup(() => {
 			var fut = new Future();
 			var sender = account0;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
-
+			console.log("!!!");
+			console.log(sender);
 			dailyWallet.methods.updatePrice()
 			.send({
 				from: sender,
@@ -246,7 +248,7 @@ Meteor.startup(() => {
 
 		'showHistory': function(trans_num){
 			var indexArray = [];
-			var sender = account1;
+			var sender = account0;
 			var dailyWallet = new web3.eth.Contract(multisigDailyLimitABI.abi, multisigDailyLimitABI.address);
 			for(var i = 0 ; i < trans_num ; i++){
 
@@ -256,7 +258,7 @@ Meteor.startup(() => {
 			var futs = _.map(indexArray,function(item, index){
 				var fut = new Future();
 				var onComplete = fut.resolver();
-
+				
 				dailyWallet.methods.transactions(item).call({from: sender}, function(err,result){
 					if(err){
 						console.error(err);
