@@ -1,0 +1,50 @@
+INFO [06-28|02:43:55] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [06-28|02:43:55] Starting peer-to-peer node               instance=Geth/cateno_demo/v1.8.9-unstable-d6ed2f67/linux-amd64/go1.10.2
+INFO [06-28|02:43:55] Allocated cache and file handles         database=/home/ec2-user/cateno/datadir/geth/chaindata cache=768 handles=512
+INFO [06-28|02:43:55] Initialised chain configuration          config="{ChainID: 91 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: 0 EIP158: 0 Byzantium: <nil> Constantinople: <nil> Engine: unknown}"
+INFO [06-28|02:43:55] Disk storage enabled for ethash caches   dir=/home/ec2-user/cateno/datadir/geth/ethash count=3
+INFO [06-28|02:43:55] Disk storage enabled for ethash DAGs     dir=/home/ec2-user/.ethash                    count=2
+INFO [06-28|02:43:55] Initialising Ethereum protocol           versions="[63 62]" network=1
+INFO [06-28|02:43:55] Loaded most recent local header          number=3575 hash=4f3b6f…ba59d7 td=983490934
+INFO [06-28|02:43:55] Loaded most recent local full block      number=3575 hash=4f3b6f…ba59d7 td=983490934
+INFO [06-28|02:43:55] Loaded most recent local fast block      number=3575 hash=4f3b6f…ba59d7 td=983490934
+INFO [06-28|02:43:55] Loaded local transaction journal         transactions=5 dropped=5
+INFO [06-28|02:43:55] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [06-28|02:43:55] Blockchain not empty, fast sync disabled 
+INFO [06-28|02:43:55] Starting P2P networking 
+INFO [06-28|02:43:55] RLPx listener up                         self="enode://bf9f4d15291a82ffed9bf98d813eca516ea00b07632812d7e4035333532aef4057ecc619d9095651b415b9f7958a027afb60c115ed7cb631f332b7683098da4f@[::]:30305?discport=0"
+INFO [06-28|02:43:55] IPC endpoint opened                      url=/home/ec2-user/cateno/datadir/geth.ipc
+INFO [06-28|02:43:55] HTTP endpoint opened                     url=http://0.0.0.0:8545                    cors=* vhosts=localhost
+WARN [06-28|02:43:55] ------------------------------------------------------------------- 
+WARN [06-28|02:43:55] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [06-28|02:43:55] This functionality is deprecated and will be removed in the future! 
+WARN [06-28|02:43:55] Please use explicit addresses! (can search via `geth account list`) 
+WARN [06-28|02:43:55] ------------------------------------------------------------------- 
+INFO [06-28|02:43:56] Unlocked account                         address=0xDB5cd3393b2CaDCE79F4A01331A5f6023e971DE0
+WARN [06-28|02:43:56] ------------------------------------------------------------------- 
+WARN [06-28|02:43:56] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [06-28|02:43:56] This functionality is deprecated and will be removed in the future! 
+WARN [06-28|02:43:56] Please use explicit addresses! (can search via `geth account list`) 
+WARN [06-28|02:43:56] ------------------------------------------------------------------- 
+INFO [06-28|02:43:57] Unlocked account                         address=0x0FF7545bD761f4A0F3328e0Ed762477Ea8917c97
+INFO [06-28|02:43:57] Transaction pool price threshold updated price=18000000000
+INFO [06-28|02:43:57] Etherbase automatically configured       address=0xDB5cd3393b2CaDCE79F4A01331A5f6023e971DE0
+INFO [06-28|02:43:57] Starting mining operation 
+INFO [06-28|02:43:57] Commit new mining work                   number=3576 txs=0 uncles=0 elapsed=176.935µs
+INFO [06-28|02:44:09] Successfully sealed new block            number=3576 hash=d01175…1a0b97
+INFO [06-28|02:44:09] 🔨 mined potential block                  number=3576 hash=d01175…1a0b97
+INFO [06-28|02:44:09] Commit new mining work                   number=3577 txs=0 uncles=0 elapsed=139.314µs
+INFO [06-28|02:44:15] Got interrupt, shutting down... 
+INFO [06-28|02:44:15] HTTP endpoint closed                     url=http://0.0.0.0:8545
+INFO [06-28|02:44:15] IPC endpoint closed                      endpoint=/home/ec2-user/cateno/datadir/geth.ipc
+INFO [06-28|02:44:15] Writing cached state to disk             block=3576 hash=d01175…1a0b97 root=a38ebb…43374a
+INFO [06-28|02:44:15] Persisted trie from memory database      nodes=3 size=627.00B time=38.178µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-28|02:44:15] Writing cached state to disk             block=3575 hash=4f3b6f…ba59d7 root=95521a…af48e3
+INFO [06-28|02:44:15] Persisted trie from memory database      nodes=0 size=0.00B   time=1.98µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-28|02:44:15] Writing cached state to disk             block=3449 hash=c0dc93…684f02 root=b0e1e8…63a1c4
+INFO [06-28|02:44:15] Persisted trie from memory database      nodes=0 size=0.00B   time=1.601µs  gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [06-28|02:44:15] Blockchain manager stopped 
+INFO [06-28|02:44:15] Stopping Ethereum protocol 
+INFO [06-28|02:44:15] Ethereum protocol stopped 
+INFO [06-28|02:44:15] Transaction pool stopped 
+INFO [06-28|02:44:15] Database closed                          database=/home/ec2-user/cateno/datadir/geth/chaindata

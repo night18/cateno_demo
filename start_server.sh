@@ -35,7 +35,7 @@ nohup lt -p 3002 -s cateno &
 cd /home/ec2-user/cateno/
 nohup geth --identity cateno_demo --datadir /home/ec2-user/cateno/datadir/ --port 30305 --nodiscover --rpc \
            --rpcapi db,eth,net,web3,personal --rpcaddr 0.0.0.0 --rpccorsdomain "*" --mine --minerthreads=1 \
-           --unlock "0,1" --password=/home/ec2-user/eth_passwords.txt &
+           --unlock "0,1,2,3" --password=/home/ec2-user/eth_passwords.txt &
 sleep 3
 
 #
