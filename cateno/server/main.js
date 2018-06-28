@@ -255,6 +255,8 @@ Meteor.startup(() => {
 				indexArray.push(i);
 			}
 
+			console.log("@@@@");
+			console.log(multisigDailyLimitABI.address);
 			var futs = _.map(indexArray,function(item, index){
 				var fut = new Future();
 				var onComplete = fut.resolver();
