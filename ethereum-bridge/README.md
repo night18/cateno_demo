@@ -6,6 +6,8 @@ _Please note that at this point this tool is still **experimental** and subject 
 ### Requirements
 - node version **>= 5.0.0** (& npm)
 
+Suggested version: node 6.9.1
+
 #### Note
 (on Ubuntu)
 
@@ -14,18 +16,10 @@ run `sudo apt-get install build-essential -y`
 You should run the following commands from within the ethereum-bridge folder.
 
 ### Install
-
-via git
 ```
-git clone https://github.com/oraclize/ethereum-bridge.git
-cd ethereum-bridge
 npm install
 ```
 
-via npm
-```
-npm install -g ethereum-bridge
-```
 
 ### How to use
 
@@ -43,7 +37,7 @@ see also [optional flags](#optional-flags)
 #### Active mode
 
 ```
-ethereum-bridge -H localhost:8545 -a 1
+node bridge -H localhost:8545 -a 1
 ```
 (deploy contracts using the account 1 found on the localhost:8545 node)
 
@@ -53,14 +47,14 @@ ethereum-bridge -H localhost:8545 -a 1
 Generate a new local address:
 
 ```
-ethereum-bridge -H localhost:8545 --broadcast --new
+node bridge -H localhost:8545 --broadcast --new
 ```
 (generate a new address locally and deploy contracts (txs broadcasted to localhost:8545 node))
 
 or if you already have one or more account in your keys.json file:
 
 ```
-ethereum-bridge -H localhost:8545 --broadcast -a 0
+node bridge -H localhost:8545 --broadcast -a 0
 ```
 (load the first account in your keys.json file (index n.0) and deploy contracts (txs broadcasted to localhost:8545 node))
 
