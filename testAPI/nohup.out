@@ -218,3 +218,23 @@ Error: connection refused: localtunnel.me:33479 (check your firewall settings)
 => Started your app.
 
 => App running at: http://54.153.66.53
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> A patch (Meteor 1.6.1.3) for your current release is available!
+   Update this project now with 'meteor update --patch'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.153.124.94
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> A patch (Meteor 1.6.1.3) for your current release is available!
+   Update this project now with 'meteor update --patch'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.153.124.94

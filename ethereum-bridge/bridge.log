@@ -2922,3 +2922,574 @@
 {"level":"debug","message":"reorg, fetching logs from-to: 5711","timestamp":"2018-06-28T17:59:48.859Z"}
 {"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-06-28T18:00:08.766Z"}
 []
+{"defaultnode":"http://localhost:8545","HOST":"localhost:8545","account":"3","gas":3700000,"confirmation":12,"disable-deterministic-oar":false,"loglevel":"info","non-interactive":false,"enable-stats":false,"no-hints":false,"gasprice":20000000000,"logFilePath":"./bridge.log","confirmations":12,"defaultGas":3700000,"level":"debug","message":"parsed options","timestamp":"2018-07-02T20:29:38.430Z"}
+{"level":"info","message":"you are running ethereum-bridge - version: 0.5.5","timestamp":"2018-07-02T20:29:38.437Z"}
+{"level":"info","message":"saving logs to: ./bridge.log","timestamp":"2018-07-02T20:29:38.438Z"}
+{"level":"info","message":"using active mode","timestamp":"2018-07-02T20:29:38.438Z"}
+{"level":"info","message":"Connecting to eth node http://localhost:8545","timestamp":"2018-07-02T20:29:38.438Z"}
+{"result":{"quotes":{"ETH":0.00000277,"USD":0.001,"BTC":2.3e-7,"EUR":0.0008264},"deployments":{"ethereum":{"public-kovan":{"addressResolver":"0xB7A07BcF2Ba2f2703b24C0691b5278999C59AC7e"},"public-mainnet":{"addressResolver":"0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed"},"public-ropsten3":{"addressResolver":"0xc03A2615D5efaf5F49F60B7BB6583eaec212fdf1"},"public-rinkeby":{"addressResolver":"0x146500cfd35B22E4A392Fe0aDc06De1a1368Ed48"}}},"distributions":{"rootstock-bridge":{"motd":"","latest":{"version":"0.5.4"}},"eris-bridge":{"motd":"","latest":{"version":"0.1.0"}},"blockapps-bridge":{"motd":"","latest":{"version":"0.5.4"}},"ethereum-bridge":{"motd":"","latest":{"version":"0.5.4"}}},"datasources":{"random":{"sessionPubKeysHash":["0xd937716ea46c0fb8f804f392eb5e00c2667262d1842017eae4f2202943ec1782"]}},"pricing":{"proofs":{"0":{"units":0,"description":"None"},"16":{"units":40,"description":"TLSNotary"},"32":{"units":40,"description":"Android"},"48":{"units":0,"description":"Ledger"}},"datasources":[{"units":10,"proof_types":[0],"name":"IPFS"},{"units":10,"proof_types":[0],"name":"swarm"},{"units":10,"proof_types":[0,16,32],"name":"URL"},{"units":10,"proof_types":[0],"name":"Blockchain"},{"units":10,"proof_types":[0,16,32],"name":"nested"},{"units":30,"proof_types":[0],"name":"WolframAlpha"},{"units":500,"proof_types":[0,16,32],"name":"computation"},{"units":50,"proof_types":[0,48],"name":"random"}]}},"success":true,"level":"debug","message":"check bridge version body result","timestamp":"2018-07-02T20:29:39.200Z"}
+{"level":"info","message":"connected to node type Geth/cateno_demo/v1.8.9-unstable-d6ed2f67/linux-amd64/go1.10.2","timestamp":"2018-07-02T20:29:39.675Z"}
+{"level":"warn","message":"Using 0x69081cd1f45afcd26290a8f911392aa7a1034938 to query contracts on your blockchain, make sure it is unlocked and do not use the same address to deploy your contracts","timestamp":"2018-07-02T20:29:40.287Z"}
+{"level":"info","message":"deploying the oraclize connector contract...","timestamp":"2018-07-02T20:29:40.470Z"}
+{"level":"info","message":"connector deployed to: 0xedff9a7256204b4a4f262d7e502863024b19587d","timestamp":"2018-07-02T20:30:01.168Z"}
+{"success":true,"connector":"0xedff9a7256204b4a4f262d7e502863024b19587d","level":"debug","message":"connector deployment result","timestamp":"2018-07-02T20:30:01.168Z"}
+{"level":"warn","message":"deterministic OAR disabled/not available, please update your contract with the new custom address generated","timestamp":"2018-07-02T20:30:01.330Z"}
+{"level":"info","message":"deploying the address resolver contract...","timestamp":"2018-07-02T20:30:01.330Z"}
+{"level":"info","message":"address resolver (OAR) deployed to: 0x38840065dee586eb33a77390649af699dbf99f37","timestamp":"2018-07-02T20:30:32.506Z"}
+{"success":true,"oar":"0x38840065dee586eb33a77390649af699dbf99f37","level":"debug","message":"OAR deployment result","timestamp":"2018-07-02T20:30:32.507Z"}
+{"level":"info","message":"updating connector pricing...","timestamp":"2018-07-02T20:30:32.507Z"}
+{"level":"info","message":"successfully deployed all contracts","timestamp":"2018-07-02T20:31:19.088Z"}
+{"success":true,"level":"debug","message":"pricing update result","timestamp":"2018-07-02T20:31:19.088Z"}
+{"context_name":"eth_5C94E99050","latest_block_number":-1,"oar":"0x38840065dee586eb33a77390649af699dbf99f37","node":{"main":"http://localhost:8545","backup":[]},"contracts":{"connector":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/oraclizeConnector.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/oraclizeConnector.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/oraclizeConnector.sol"},"oar":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/addressResolver.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/addressResolver.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/addressResolver.sol"}},"deterministic_oar":true,"deploy_gas":3700000,"account":"0x69081cd1f45afcd26290a8f911392aa7a1034938","mode":"active","key_file":"/home/ec2-user/cateno_demo/ethereum-bridge/config/instance/keys.json","gas_price":20000000000,"onchain_config":{"pricing":[{"name":"IPFS","proof":0,"units":10},{"name":"IPFS","proof":1,"units":10},{"name":"swarm","proof":0,"units":10},{"name":"swarm","proof":1,"units":10},{"name":"URL","proof":0,"units":10},{"name":"URL","proof":1,"units":10},{"name":"URL","proof":16,"units":50},{"name":"URL","proof":17,"units":50},{"name":"URL","proof":32,"units":50},{"name":"URL","proof":33,"units":50},{"name":"Blockchain","proof":0,"units":10},{"name":"Blockchain","proof":1,"units":10},{"name":"nested","proof":0,"units":10},{"name":"nested","proof":1,"units":10},{"name":"nested","proof":16,"units":50},{"name":"nested","proof":17,"units":50},{"name":"nested","proof":32,"units":50},{"name":"nested","proof":33,"units":50},{"name":"WolframAlpha","proof":0,"units":30},{"name":"WolframAlpha","proof":1,"units":30},{"name":"computation","proof":0,"units":500},{"name":"computation","proof":1,"units":500},{"name":"computation","proof":16,"units":540},{"name":"computation","proof":17,"units":540},{"name":"computation","proof":32,"units":540},{"name":"computation","proof":33,"units":540},{"name":"random","proof":0,"units":50},{"name":"random","proof":1,"units":50},{"name":"random","proof":48,"units":50},{"name":"random","proof":49,"units":50}],"base_price":0.00000277},"connector":"0xedff9a7256204b4a4f262d7e502863024b19587d","level":"debug","message":"new oracle inline configuration","timestamp":"2018-07-02T20:31:19.088Z"}
+{"level":"info","message":"instance configuration file saved to /home/ec2-user/cateno_demo/ethereum-bridge/config/instance/oracle_instance_20180702T203119.json","timestamp":"2018-07-02T20:31:19.090Z"}
+{"level":"debug","message":"starting the bridge log manager...","timestamp":"2018-07-02T20:31:19.093Z"}
+{"level":"debug","message":"latest block seen (config file) -1","timestamp":"2018-07-02T20:31:19.095Z"}
+{"level":"debug","message":"running reorgListen","timestamp":"2018-07-02T20:31:19.271Z"}
+{"level":"info","message":"Listening @ 0xedff9a7256204b4a4f262d7e502863024b19587d (Oraclize Connector)\n","timestamp":"2018-07-02T20:31:19.272Z"}
+{"level":"debug","message":"reorg block target: 6774","timestamp":"2018-07-02T20:31:49.271Z"}
+{"level":"debug","message":"reorg block target: 6774","timestamp":"2018-07-02T20:32:19.399Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6774","timestamp":"2018-07-02T20:32:19.765Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T20:32:19.768Z"}
+[]
+{"level":"debug","message":"reorg block target: 6775","timestamp":"2018-07-02T20:32:49.767Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6775","timestamp":"2018-07-02T20:32:50.123Z"}
+{"level":"debug","message":"reorg block target: 6776","timestamp":"2018-07-02T20:33:20.127Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6776","timestamp":"2018-07-02T20:33:20.469Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T20:33:20.471Z"}
+[]
+{"level":"debug","message":"reorg block target: 6777","timestamp":"2018-07-02T20:33:50.471Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6777","timestamp":"2018-07-02T20:33:50.819Z"}
+{"level":"debug","message":"reorg block target: 6778","timestamp":"2018-07-02T20:34:20.822Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6778","timestamp":"2018-07-02T20:34:21.126Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T20:34:21.128Z"}
+[]
+{"level":"debug","message":"reorg block target: 6779","timestamp":"2018-07-02T20:34:51.128Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6779","timestamp":"2018-07-02T20:34:51.479Z"}
+{"defaultnode":"http://localhost:8545","instance":"oracle_instance_20180702T203119.json","gas":3700000,"confirmation":12,"disable-deterministic-oar":false,"loglevel":"info","non-interactive":false,"enable-stats":false,"no-hints":false,"gasprice":20000000000,"logFilePath":"./bridge.log","confirmations":12,"defaultGas":3700000,"level":"debug","message":"parsed options","timestamp":"2018-07-02T21:06:32.000Z"}
+{"level":"info","message":"you are running ethereum-bridge - version: 0.5.5","timestamp":"2018-07-02T21:06:32.010Z"}
+{"level":"info","message":"saving logs to: ./bridge.log","timestamp":"2018-07-02T21:06:32.010Z"}
+["oracle_instance_20180628T093334.json","oracle_instance_20180629T043703.json","oracle_instance_20180702T141615.json","oracle_instance_20180702T203119.json"]
+{"level":"info","message":"using active mode","timestamp":"2018-07-02T21:06:32.012Z"}
+{"level":"info","message":"Connecting to eth node http://localhost:8545","timestamp":"2018-07-02T21:06:32.012Z"}
+{"level":"info","message":"using oracle_instance_20180702T203119.json oracle configuration file","timestamp":"2018-07-02T21:06:32.021Z"}
+{"result":{"quotes":{"ETH":0.00000277,"USD":0.001,"BTC":2.3e-7,"EUR":0.0008264},"deployments":{"ethereum":{"public-kovan":{"addressResolver":"0xB7A07BcF2Ba2f2703b24C0691b5278999C59AC7e"},"public-mainnet":{"addressResolver":"0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed"},"public-ropsten3":{"addressResolver":"0xc03A2615D5efaf5F49F60B7BB6583eaec212fdf1"},"public-rinkeby":{"addressResolver":"0x146500cfd35B22E4A392Fe0aDc06De1a1368Ed48"}}},"distributions":{"rootstock-bridge":{"motd":"","latest":{"version":"0.5.4"}},"eris-bridge":{"motd":"","latest":{"version":"0.1.0"}},"blockapps-bridge":{"motd":"","latest":{"version":"0.5.4"}},"ethereum-bridge":{"motd":"","latest":{"version":"0.5.4"}}},"datasources":{"random":{"sessionPubKeysHash":["0xd937716ea46c0fb8f804f392eb5e00c2667262d1842017eae4f2202943ec1782"]}},"pricing":{"proofs":{"0":{"units":0,"description":"None"},"16":{"units":40,"description":"TLSNotary"},"32":{"units":40,"description":"Android"},"48":{"units":0,"description":"Ledger"}},"datasources":[{"units":10,"proof_types":[0],"name":"IPFS"},{"units":10,"proof_types":[0],"name":"swarm"},{"units":10,"proof_types":[0,16,32],"name":"URL"},{"units":10,"proof_types":[0],"name":"Blockchain"},{"units":10,"proof_types":[0,16,32],"name":"nested"},{"units":30,"proof_types":[0],"name":"WolframAlpha"},{"units":500,"proof_types":[0,16,32],"name":"computation"},{"units":50,"proof_types":[0,48],"name":"random"}]}},"success":true,"level":"debug","message":"check bridge version body result","timestamp":"2018-07-02T21:06:32.787Z"}
+{"context_name":"eth_5C94E99050","latest_block_number":6798,"oar":"0x38840065dee586eb33a77390649af699dbf99f37","node":{"main":"http://localhost:8545","backup":[]},"contracts":{"connector":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/oraclizeConnector.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/oraclizeConnector.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/oraclizeConnector.sol"},"oar":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/addressResolver.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/addressResolver.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/addressResolver.sol"}},"deterministic_oar":true,"deploy_gas":3700000,"account":"0x69081cd1f45afcd26290a8f911392aa7a1034938","mode":"active","key_file":"/home/ec2-user/cateno_demo/ethereum-bridge/config/instance/keys.json","gas_price":20000000000,"onchain_config":{"pricing":[{"name":"IPFS","proof":0,"units":10},{"name":"IPFS","proof":1,"units":10},{"name":"swarm","proof":0,"units":10},{"name":"swarm","proof":1,"units":10},{"name":"URL","proof":0,"units":10},{"name":"URL","proof":1,"units":10},{"name":"URL","proof":16,"units":50},{"name":"URL","proof":17,"units":50},{"name":"URL","proof":32,"units":50},{"name":"URL","proof":33,"units":50},{"name":"Blockchain","proof":0,"units":10},{"name":"Blockchain","proof":1,"units":10},{"name":"nested","proof":0,"units":10},{"name":"nested","proof":1,"units":10},{"name":"nested","proof":16,"units":50},{"name":"nested","proof":17,"units":50},{"name":"nested","proof":32,"units":50},{"name":"nested","proof":33,"units":50},{"name":"WolframAlpha","proof":0,"units":30},{"name":"WolframAlpha","proof":1,"units":30},{"name":"computation","proof":0,"units":500},{"name":"computation","proof":1,"units":500},{"name":"computation","proof":16,"units":540},{"name":"computation","proof":17,"units":540},{"name":"computation","proof":32,"units":540},{"name":"computation","proof":33,"units":540},{"name":"random","proof":0,"units":50},{"name":"random","proof":1,"units":50},{"name":"random","proof":48,"units":50},{"name":"random","proof":49,"units":50}],"base_price":0.00000277},"connector":"0xedff9a7256204b4a4f262d7e502863024b19587d","level":"debug","message":"configuration file","timestamp":"2018-07-02T21:06:32.790Z"}
+{"level":"info","message":"connected to node type Geth/cateno_demo/v1.8.9-unstable-d6ed2f67/linux-amd64/go1.10.2","timestamp":"2018-07-02T21:06:33.851Z"}
+{"level":"warn","message":"Using 0x69081cd1f45afcd26290a8f911392aa7a1034938 to query contracts on your blockchain, make sure it is unlocked and do not use the same address to deploy your contracts","timestamp":"2018-07-02T21:06:35.284Z"}
+{"level":"info","message":"OAR found: 0x38840065dee586eb33a77390649af699dbf99f37","timestamp":"2018-07-02T21:06:35.284Z"}
+{"level":"info","message":"connector found: 0xedff9a7256204b4a4f262d7e502863024b19587d","timestamp":"2018-07-02T21:06:35.284Z"}
+{"level":"info","message":"callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-07-02T21:06:35.284Z"}
+{"level":"debug","message":"starting the bridge log manager...","timestamp":"2018-07-02T21:06:35.286Z"}
+{"level":"debug","message":"latest block seen (config file) 6798","timestamp":"2018-07-02T21:06:35.286Z"}
+{"level":"debug","message":"running reorgListen","timestamp":"2018-07-02T21:06:35.472Z"}
+{"level":"info","message":"Listening @ 0xedff9a7256204b4a4f262d7e502863024b19587d (Oraclize Connector)\n","timestamp":"2018-07-02T21:06:35.473Z"}
+{"level":"info","message":"latest block seen: 6799 - processing 215 new blocks","timestamp":"2018-07-02T21:06:35.688Z"}
+{"level":"info","message":"fetching pending queries from database with oar: 0x38840065dee586eb33a77390649af699dbf99f37 and callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-07-02T21:06:35.908Z"}
+{"level":"info","message":"found a total of 0 pending queries","timestamp":"2018-07-02T21:06:36.555Z"}
+{"level":"debug","message":"reorg block target: 6990","timestamp":"2018-07-02T21:07:05.473Z"}
+{"level":"debug","message":"reorg block target: 6990","timestamp":"2018-07-02T21:07:35.652Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6990","timestamp":"2018-07-02T21:07:36.018Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:07:36.022Z"}
+[]
+{"level":"debug","message":"reorg block target: 6991","timestamp":"2018-07-02T21:08:06.022Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6991","timestamp":"2018-07-02T21:08:06.340Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:08:36.334Z"}
+{"level":"debug","message":"reorg block target: 6992","timestamp":"2018-07-02T21:08:36.608Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6992","timestamp":"2018-07-02T21:08:36.963Z"}
+[]
+{"level":"debug","message":"reorg block target: 6993","timestamp":"2018-07-02T21:09:06.966Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6993","timestamp":"2018-07-02T21:09:07.323Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:09:36.608Z"}
+[]
+{"level":"debug","message":"reorg block target: 6994","timestamp":"2018-07-02T21:09:37.327Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6994","timestamp":"2018-07-02T21:09:37.659Z"}
+{"level":"debug","message":"reorg block target: 6995","timestamp":"2018-07-02T21:10:07.661Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:10:36.935Z"}
+[]
+{"level":"debug","message":"reorg block target: 6995","timestamp":"2018-07-02T21:10:37.839Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6995","timestamp":"2018-07-02T21:10:38.188Z"}
+{"level":"debug","message":"reorg block target: 6996","timestamp":"2018-07-02T21:11:08.190Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6996","timestamp":"2018-07-02T21:11:08.493Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:11:37.300Z"}
+[]
+{"level":"debug","message":"reorg block target: 6997","timestamp":"2018-07-02T21:11:38.495Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6997","timestamp":"2018-07-02T21:11:38.857Z"}
+{"level":"debug","message":"reorg block target: 6998","timestamp":"2018-07-02T21:12:08.861Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6998","timestamp":"2018-07-02T21:12:09.217Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:12:37.641Z"}
+[]
+{"level":"debug","message":"reorg block target: 6999","timestamp":"2018-07-02T21:12:39.221Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 6999","timestamp":"2018-07-02T21:12:39.591Z"}
+{"level":"debug","message":"reorg block target: 7000","timestamp":"2018-07-02T21:13:09.593Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7000","timestamp":"2018-07-02T21:13:09.946Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:13:37.991Z"}
+[]
+{"level":"debug","message":"reorg block target: 7001","timestamp":"2018-07-02T21:13:39.948Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7001","timestamp":"2018-07-02T21:13:40.280Z"}
+{"level":"debug","message":"reorg block target: 7002","timestamp":"2018-07-02T21:14:10.283Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7002","timestamp":"2018-07-02T21:14:10.636Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:14:38.360Z"}
+[]
+{"level":"debug","message":"reorg block target: 7003","timestamp":"2018-07-02T21:14:40.639Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7003","timestamp":"2018-07-02T21:14:41.027Z"}
+{"level":"debug","message":"reorg block target: 7004","timestamp":"2018-07-02T21:15:11.029Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7004","timestamp":"2018-07-02T21:15:11.370Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:15:38.720Z"}
+[]
+{"level":"debug","message":"reorg block target: 7005","timestamp":"2018-07-02T21:15:41.373Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7005","timestamp":"2018-07-02T21:15:41.735Z"}
+{"level":"debug","message":"reorg block target: 7006","timestamp":"2018-07-02T21:16:11.738Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:16:39.091Z"}
+[]
+{"level":"debug","message":"reorg block target: 7006","timestamp":"2018-07-02T21:16:41.927Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7006","timestamp":"2018-07-02T21:16:42.310Z"}
+{"level":"debug","message":"reorg block target: 7007","timestamp":"2018-07-02T21:17:12.313Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7007","timestamp":"2018-07-02T21:17:12.641Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:17:39.442Z"}
+[]
+{"level":"debug","message":"reorg block target: 7008","timestamp":"2018-07-02T21:17:42.644Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7008","timestamp":"2018-07-02T21:17:42.962Z"}
+{"level":"debug","message":"reorg block target: 7009","timestamp":"2018-07-02T21:18:12.966Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7009","timestamp":"2018-07-02T21:18:13.326Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:18:39.763Z"}
+[]
+{"level":"debug","message":"reorg block target: 7010","timestamp":"2018-07-02T21:18:43.337Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7010","timestamp":"2018-07-02T21:18:43.620Z"}
+{"level":"debug","message":"reorg block target: 7011","timestamp":"2018-07-02T21:19:13.622Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7011","timestamp":"2018-07-02T21:19:13.940Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:19:40.080Z"}
+[]
+{"level":"debug","message":"reorg block target: 7012","timestamp":"2018-07-02T21:19:43.942Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7012","timestamp":"2018-07-02T21:19:44.278Z"}
+{"level":"debug","message":"reorg block target: 7013","timestamp":"2018-07-02T21:20:14.281Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7013","timestamp":"2018-07-02T21:20:14.639Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:20:40.403Z"}
+[]
+{"level":"debug","message":"reorg block target: 7014","timestamp":"2018-07-02T21:20:44.641Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7014","timestamp":"2018-07-02T21:20:44.999Z"}
+{"level":"debug","message":"reorg block target: 7015","timestamp":"2018-07-02T21:21:15.003Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7015","timestamp":"2018-07-02T21:21:15.317Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:21:40.750Z"}
+[]
+{"level":"debug","message":"reorg block target: 7016","timestamp":"2018-07-02T21:21:45.318Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7016","timestamp":"2018-07-02T21:21:45.682Z"}
+{"level":"debug","message":"reorg block target: 7017","timestamp":"2018-07-02T21:22:15.688Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7017","timestamp":"2018-07-02T21:22:16.041Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:22:41.091Z"}
+[]
+{"level":"debug","message":"reorg block target: 7018","timestamp":"2018-07-02T21:22:46.056Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7018","timestamp":"2018-07-02T21:22:46.401Z"}
+{"level":"debug","message":"reorg block target: 7019","timestamp":"2018-07-02T21:23:16.404Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:23:41.445Z"}
+[]
+{"level":"debug","message":"reorg block target: 7019","timestamp":"2018-07-02T21:23:46.584Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7019","timestamp":"2018-07-02T21:23:46.882Z"}
+{"level":"debug","message":"reorg block target: 7020","timestamp":"2018-07-02T21:24:16.885Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7020","timestamp":"2018-07-02T21:24:17.207Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:24:41.807Z"}
+[]
+{"level":"debug","message":"reorg block target: 7021","timestamp":"2018-07-02T21:24:47.210Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7021","timestamp":"2018-07-02T21:24:47.578Z"}
+{"level":"debug","message":"reorg block target: 7022","timestamp":"2018-07-02T21:25:17.581Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7022","timestamp":"2018-07-02T21:25:17.931Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:25:42.193Z"}
+[]
+{"level":"debug","message":"reorg block target: 7023","timestamp":"2018-07-02T21:25:47.935Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7023","timestamp":"2018-07-02T21:25:48.326Z"}
+{"level":"debug","message":"reorg block target: 7024","timestamp":"2018-07-02T21:26:18.328Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7024","timestamp":"2018-07-02T21:26:18.651Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:26:42.528Z"}
+[]
+{"level":"debug","message":"reorg block target: 7025","timestamp":"2018-07-02T21:26:48.652Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7025","timestamp":"2018-07-02T21:26:48.954Z"}
+{"level":"debug","message":"reorg block target: 7026","timestamp":"2018-07-02T21:27:18.956Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7026","timestamp":"2018-07-02T21:27:19.320Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:27:42.863Z"}
+[]
+{"level":"debug","message":"reorg block target: 7027","timestamp":"2018-07-02T21:27:49.322Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7027","timestamp":"2018-07-02T21:27:49.666Z"}
+{"level":"debug","message":"reorg block target: 7028","timestamp":"2018-07-02T21:28:19.669Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7028","timestamp":"2018-07-02T21:28:19.967Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:28:43.152Z"}
+[]
+{"level":"debug","message":"reorg block target: 7029","timestamp":"2018-07-02T21:28:49.969Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7029","timestamp":"2018-07-02T21:28:50.259Z"}
+{"level":"debug","message":"reorg block target: 7030","timestamp":"2018-07-02T21:29:20.261Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7030","timestamp":"2018-07-02T21:29:20.559Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:29:43.407Z"}
+[]
+{"level":"debug","message":"reorg block target: 7031","timestamp":"2018-07-02T21:29:50.561Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7031","timestamp":"2018-07-02T21:29:50.927Z"}
+{"level":"debug","message":"reorg block target: 7032","timestamp":"2018-07-02T21:30:20.929Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7032","timestamp":"2018-07-02T21:30:21.295Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:30:43.741Z"}
+[]
+{"level":"debug","message":"reorg block target: 7033","timestamp":"2018-07-02T21:30:51.297Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7033","timestamp":"2018-07-02T21:30:51.598Z"}
+{"level":"debug","message":"reorg block target: 7034","timestamp":"2018-07-02T21:31:21.600Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7034","timestamp":"2018-07-02T21:31:21.911Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:31:44.071Z"}
+[]
+{"level":"debug","message":"reorg block target: 7035","timestamp":"2018-07-02T21:31:51.913Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7035","timestamp":"2018-07-02T21:31:52.257Z"}
+{"level":"debug","message":"reorg block target: 7036","timestamp":"2018-07-02T21:32:22.259Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7036","timestamp":"2018-07-02T21:32:22.547Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:32:44.427Z"}
+[]
+{"level":"debug","message":"reorg block target: 7037","timestamp":"2018-07-02T21:32:52.555Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7037","timestamp":"2018-07-02T21:32:52.941Z"}
+{"level":"debug","message":"reorg block target: 7038","timestamp":"2018-07-02T21:33:22.944Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7038","timestamp":"2018-07-02T21:33:23.323Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:33:44.777Z"}
+[]
+{"level":"debug","message":"reorg block target: 7039","timestamp":"2018-07-02T21:33:53.325Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7039","timestamp":"2018-07-02T21:33:53.675Z"}
+{"level":"debug","message":"reorg block target: 7040","timestamp":"2018-07-02T21:34:23.678Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7040","timestamp":"2018-07-02T21:34:24.013Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:34:45.105Z"}
+[]
+{"level":"debug","message":"reorg block target: 7041","timestamp":"2018-07-02T21:34:54.015Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7041","timestamp":"2018-07-02T21:34:54.378Z"}
+{"level":"debug","message":"reorg block target: 7042","timestamp":"2018-07-02T21:35:24.380Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7042","timestamp":"2018-07-02T21:35:24.756Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:35:45.496Z"}
+[]
+{"level":"debug","message":"reorg block target: 7043","timestamp":"2018-07-02T21:35:54.759Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7043","timestamp":"2018-07-02T21:35:55.131Z"}
+{"level":"debug","message":"reorg block target: 7044","timestamp":"2018-07-02T21:36:25.134Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7044","timestamp":"2018-07-02T21:36:25.450Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:36:45.831Z"}
+[]
+{"level":"debug","message":"reorg block target: 7045","timestamp":"2018-07-02T21:36:55.454Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7045","timestamp":"2018-07-02T21:36:55.762Z"}
+{"level":"debug","message":"reorg block target: 7046","timestamp":"2018-07-02T21:37:25.765Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7046","timestamp":"2018-07-02T21:37:26.095Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:37:46.180Z"}
+[]
+{"level":"debug","message":"reorg block target: 7047","timestamp":"2018-07-02T21:37:56.097Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7047","timestamp":"2018-07-02T21:37:56.451Z"}
+{"level":"debug","message":"reorg block target: 7048","timestamp":"2018-07-02T21:38:26.453Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7048","timestamp":"2018-07-02T21:38:26.798Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:38:46.499Z"}
+[]
+{"level":"debug","message":"reorg block target: 7049","timestamp":"2018-07-02T21:38:56.801Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7049","timestamp":"2018-07-02T21:38:57.127Z"}
+{"level":"debug","message":"reorg block target: 7050","timestamp":"2018-07-02T21:39:27.130Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7050","timestamp":"2018-07-02T21:39:27.488Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:39:46.808Z"}
+[]
+{"level":"debug","message":"reorg block target: 7051","timestamp":"2018-07-02T21:39:57.490Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7051","timestamp":"2018-07-02T21:39:57.807Z"}
+{"level":"debug","message":"reorg block target: 7052","timestamp":"2018-07-02T21:40:27.809Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7052","timestamp":"2018-07-02T21:40:28.177Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:40:47.185Z"}
+[]
+{"level":"debug","message":"reorg block target: 7053","timestamp":"2018-07-02T21:40:58.180Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7053","timestamp":"2018-07-02T21:40:58.542Z"}
+{"level":"debug","message":"reorg block target: 7054","timestamp":"2018-07-02T21:41:28.544Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7054","timestamp":"2018-07-02T21:41:28.921Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:41:47.516Z"}
+[]
+{"level":"debug","message":"reorg block target: 7055","timestamp":"2018-07-02T21:41:58.923Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7055","timestamp":"2018-07-02T21:41:59.267Z"}
+{"level":"debug","message":"reorg block target: 7056","timestamp":"2018-07-02T21:42:29.269Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7056","timestamp":"2018-07-02T21:42:29.640Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:42:47.872Z"}
+[]
+{"level":"debug","message":"reorg block target: 7057","timestamp":"2018-07-02T21:42:59.644Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7057","timestamp":"2018-07-02T21:43:00.014Z"}
+{"level":"debug","message":"reorg block target: 7058","timestamp":"2018-07-02T21:43:30.016Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7058","timestamp":"2018-07-02T21:43:30.318Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:43:48.232Z"}
+[]
+{"level":"debug","message":"reorg block target: 7059","timestamp":"2018-07-02T21:44:00.320Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7059","timestamp":"2018-07-02T21:44:00.683Z"}
+{"level":"debug","message":"reorg block target: 7060","timestamp":"2018-07-02T21:44:30.686Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7060","timestamp":"2018-07-02T21:44:31.047Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:44:48.599Z"}
+[]
+{"level":"debug","message":"reorg block target: 7061","timestamp":"2018-07-02T21:45:01.049Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7061","timestamp":"2018-07-02T21:45:01.426Z"}
+{"level":"debug","message":"reorg block target: 7062","timestamp":"2018-07-02T21:45:31.432Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7062","timestamp":"2018-07-02T21:45:31.795Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:45:48.905Z"}
+[]
+{"level":"debug","message":"reorg block target: 7063","timestamp":"2018-07-02T21:46:01.797Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7063","timestamp":"2018-07-02T21:46:02.120Z"}
+{"level":"debug","message":"reorg block target: 7064","timestamp":"2018-07-02T21:46:32.122Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7064","timestamp":"2018-07-02T21:46:32.455Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:46:49.267Z"}
+[]
+{"level":"debug","message":"reorg block target: 7065","timestamp":"2018-07-02T21:47:02.457Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7065","timestamp":"2018-07-02T21:47:02.850Z"}
+{"level":"debug","message":"reorg block target: 7066","timestamp":"2018-07-02T21:47:32.853Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7066","timestamp":"2018-07-02T21:47:33.224Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:47:49.647Z"}
+[]
+{"level":"debug","message":"reorg block target: 7067","timestamp":"2018-07-02T21:48:03.226Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7067","timestamp":"2018-07-02T21:48:03.511Z"}
+{"level":"debug","message":"reorg block target: 7068","timestamp":"2018-07-02T21:48:33.513Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7068","timestamp":"2018-07-02T21:48:33.875Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:48:49.983Z"}
+[]
+{"level":"debug","message":"reorg block target: 7069","timestamp":"2018-07-02T21:49:03.878Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7069","timestamp":"2018-07-02T21:49:04.259Z"}
+{"level":"debug","message":"reorg block target: 7070","timestamp":"2018-07-02T21:49:34.261Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7070","timestamp":"2018-07-02T21:49:34.603Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:49:50.300Z"}
+[]
+{"level":"debug","message":"reorg block target: 7071","timestamp":"2018-07-02T21:50:04.606Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7071","timestamp":"2018-07-02T21:50:04.968Z"}
+{"level":"debug","message":"reorg block target: 7072","timestamp":"2018-07-02T21:50:34.970Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7072","timestamp":"2018-07-02T21:50:35.274Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:50:50.676Z"}
+[]
+{"level":"debug","message":"reorg block target: 7073","timestamp":"2018-07-02T21:51:05.281Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7073","timestamp":"2018-07-02T21:51:05.633Z"}
+{"level":"debug","message":"reorg block target: 7074","timestamp":"2018-07-02T21:51:35.636Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7074","timestamp":"2018-07-02T21:51:35.989Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:51:51.014Z"}
+[]
+{"level":"debug","message":"reorg block target: 7075","timestamp":"2018-07-02T21:52:05.991Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7075","timestamp":"2018-07-02T21:52:06.351Z"}
+{"level":"debug","message":"reorg block target: 7076","timestamp":"2018-07-02T21:52:36.353Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7076","timestamp":"2018-07-02T21:52:36.693Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:52:51.319Z"}
+[]
+{"level":"debug","message":"reorg block target: 7077","timestamp":"2018-07-02T21:53:06.695Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7077","timestamp":"2018-07-02T21:53:06.998Z"}
+{"level":"debug","message":"reorg block target: 7078","timestamp":"2018-07-02T21:53:37.000Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7078","timestamp":"2018-07-02T21:53:37.361Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:53:51.666Z"}
+[]
+{"level":"debug","message":"reorg block target: 7079","timestamp":"2018-07-02T21:54:07.363Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7079","timestamp":"2018-07-02T21:54:07.695Z"}
+{"level":"debug","message":"reorg block target: 7080","timestamp":"2018-07-02T21:54:37.696Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7080","timestamp":"2018-07-02T21:54:38.039Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:54:52.031Z"}
+[]
+{"level":"debug","message":"reorg block target: 7081","timestamp":"2018-07-02T21:55:08.040Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7081","timestamp":"2018-07-02T21:55:08.390Z"}
+{"level":"debug","message":"reorg block target: 7082","timestamp":"2018-07-02T21:55:38.393Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7082","timestamp":"2018-07-02T21:55:38.739Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:55:52.396Z"}
+[]
+{"level":"debug","message":"reorg block target: 7083","timestamp":"2018-07-02T21:56:08.741Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7083","timestamp":"2018-07-02T21:56:09.034Z"}
+{"level":"debug","message":"reorg block target: 7084","timestamp":"2018-07-02T21:56:39.036Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7084","timestamp":"2018-07-02T21:56:39.367Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:56:52.716Z"}
+[]
+{"level":"debug","message":"reorg block target: 7085","timestamp":"2018-07-02T21:57:09.370Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7085","timestamp":"2018-07-02T21:57:09.638Z"}
+{"level":"debug","message":"reorg block target: 7086","timestamp":"2018-07-02T21:57:39.639Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7086","timestamp":"2018-07-02T21:57:40.005Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:57:53.035Z"}
+[]
+{"level":"debug","message":"reorg block target: 7087","timestamp":"2018-07-02T21:58:10.007Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7087","timestamp":"2018-07-02T21:58:10.306Z"}
+{"level":"debug","message":"reorg block target: 7088","timestamp":"2018-07-02T21:58:40.310Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7088","timestamp":"2018-07-02T21:58:40.632Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:58:53.347Z"}
+[]
+{"level":"debug","message":"reorg block target: 7089","timestamp":"2018-07-02T21:59:10.634Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7089","timestamp":"2018-07-02T21:59:11.015Z"}
+{"level":"debug","message":"reorg block target: 7090","timestamp":"2018-07-02T21:59:41.017Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7090","timestamp":"2018-07-02T21:59:41.339Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T21:59:53.699Z"}
+[]
+{"level":"debug","message":"reorg block target: 7091","timestamp":"2018-07-02T22:00:11.342Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7091","timestamp":"2018-07-02T22:00:11.687Z"}
+{"level":"debug","message":"reorg block target: 7092","timestamp":"2018-07-02T22:00:41.689Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7092","timestamp":"2018-07-02T22:00:42.049Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:00:54.067Z"}
+[]
+{"level":"debug","message":"reorg block target: 7093","timestamp":"2018-07-02T22:01:12.050Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7093","timestamp":"2018-07-02T22:01:12.391Z"}
+{"level":"debug","message":"reorg block target: 7094","timestamp":"2018-07-02T22:01:42.393Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7094","timestamp":"2018-07-02T22:01:42.762Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:01:54.419Z"}
+[]
+{"level":"debug","message":"reorg block target: 7095","timestamp":"2018-07-02T22:02:12.764Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7095","timestamp":"2018-07-02T22:02:13.124Z"}
+{"level":"debug","message":"reorg block target: 7096","timestamp":"2018-07-02T22:02:43.126Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7096","timestamp":"2018-07-02T22:02:43.503Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:02:54.732Z"}
+[]
+{"level":"debug","message":"reorg block target: 7097","timestamp":"2018-07-02T22:03:13.506Z"}
+{"level":"debug","message":"reorg block target: 7097","timestamp":"2018-07-02T22:03:43.683Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7097","timestamp":"2018-07-02T22:03:44.025Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:03:55.123Z"}
+[]
+{"level":"debug","message":"reorg block target: 7098","timestamp":"2018-07-02T22:04:14.027Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7098","timestamp":"2018-07-02T22:04:14.306Z"}
+{"level":"debug","message":"reorg block target: 7099","timestamp":"2018-07-02T22:04:44.308Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7099","timestamp":"2018-07-02T22:04:44.612Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:04:55.484Z"}
+[]
+{"level":"debug","message":"reorg block target: 7100","timestamp":"2018-07-02T22:05:14.614Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7100","timestamp":"2018-07-02T22:05:14.993Z"}
+{"level":"debug","message":"reorg block target: 7101","timestamp":"2018-07-02T22:05:44.995Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7101","timestamp":"2018-07-02T22:05:45.336Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:05:55.836Z"}
+[]
+{"level":"debug","message":"reorg block target: 7102","timestamp":"2018-07-02T22:06:15.338Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7102","timestamp":"2018-07-02T22:06:15.681Z"}
+{"level":"debug","message":"reorg block target: 7103","timestamp":"2018-07-02T22:06:45.684Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7103","timestamp":"2018-07-02T22:06:46.039Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:06:56.200Z"}
+[]
+{"level":"debug","message":"reorg block target: 7104","timestamp":"2018-07-02T22:07:16.041Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7104","timestamp":"2018-07-02T22:07:16.410Z"}
+{"level":"debug","message":"reorg block target: 7105","timestamp":"2018-07-02T22:07:46.411Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:07:56.540Z"}
+[]
+{"level":"debug","message":"reorg block target: 7105","timestamp":"2018-07-02T22:08:16.576Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7105","timestamp":"2018-07-02T22:08:16.903Z"}
+{"level":"debug","message":"reorg block target: 7106","timestamp":"2018-07-02T22:08:46.907Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7106","timestamp":"2018-07-02T22:08:47.229Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:08:56.871Z"}
+[]
+{"level":"debug","message":"reorg block target: 7107","timestamp":"2018-07-02T22:09:17.231Z"}
+{"level":"debug","message":"reorg block target: 7107","timestamp":"2018-07-02T22:09:47.349Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7107","timestamp":"2018-07-02T22:09:47.709Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:09:57.187Z"}
+[]
+{"level":"debug","message":"reorg block target: 7108","timestamp":"2018-07-02T22:10:17.711Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7108","timestamp":"2018-07-02T22:10:18.058Z"}
+{"level":"debug","message":"reorg block target: 7109","timestamp":"2018-07-02T22:10:48.060Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7109","timestamp":"2018-07-02T22:10:48.362Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:10:57.536Z"}
+[]
+{"level":"debug","message":"reorg block target: 7110","timestamp":"2018-07-02T22:11:18.365Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7110","timestamp":"2018-07-02T22:11:18.694Z"}
+{"level":"debug","message":"reorg block target: 7111","timestamp":"2018-07-02T22:11:48.697Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:11:57.896Z"}
+[]
+{"level":"debug","message":"reorg block target: 7111","timestamp":"2018-07-02T22:12:18.859Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7111","timestamp":"2018-07-02T22:12:19.187Z"}
+{"level":"debug","message":"reorg block target: 7112","timestamp":"2018-07-02T22:12:49.189Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7112","timestamp":"2018-07-02T22:12:49.540Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:12:58.258Z"}
+[]
+{"level":"debug","message":"reorg block target: 7113","timestamp":"2018-07-02T22:13:19.542Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7113","timestamp":"2018-07-02T22:13:19.874Z"}
+{"level":"debug","message":"reorg block target: 7114","timestamp":"2018-07-02T22:13:49.877Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7114","timestamp":"2018-07-02T22:13:50.249Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:13:58.553Z"}
+[]
+{"level":"debug","message":"reorg block target: 7115","timestamp":"2018-07-02T22:14:20.251Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7115","timestamp":"2018-07-02T22:14:20.607Z"}
+{"level":"debug","message":"reorg block target: 7116","timestamp":"2018-07-02T22:14:50.609Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7116","timestamp":"2018-07-02T22:14:50.978Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:14:58.916Z"}
+[]
+{"level":"debug","message":"reorg block target: 7117","timestamp":"2018-07-02T22:15:20.980Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7117","timestamp":"2018-07-02T22:15:21.322Z"}
+{"level":"debug","message":"reorg block target: 7118","timestamp":"2018-07-02T22:15:51.324Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7118","timestamp":"2018-07-02T22:15:51.687Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:15:59.274Z"}
+[]
+{"level":"debug","message":"reorg block target: 7119","timestamp":"2018-07-02T22:16:21.688Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7119","timestamp":"2018-07-02T22:16:22.031Z"}
+{"level":"debug","message":"reorg block target: 7120","timestamp":"2018-07-02T22:16:52.034Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7120","timestamp":"2018-07-02T22:16:52.358Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:16:59.623Z"}
+[]
+{"defaultnode":"http://localhost:8545","instance":"oracle_instance_20180702T203119.json","gas":3700000,"confirmation":12,"disable-deterministic-oar":false,"loglevel":"info","non-interactive":false,"enable-stats":false,"no-hints":false,"gasprice":20000000000,"logFilePath":"./bridge.log","confirmations":12,"defaultGas":3700000,"level":"debug","message":"parsed options","timestamp":"2018-07-02T22:17:21.711Z"}
+{"level":"info","message":"you are running ethereum-bridge - version: 0.5.5","timestamp":"2018-07-02T22:17:21.722Z"}
+{"level":"info","message":"saving logs to: ./bridge.log","timestamp":"2018-07-02T22:17:21.722Z"}
+["oracle_instance_20180628T093334.json","oracle_instance_20180629T043703.json","oracle_instance_20180702T141615.json","oracle_instance_20180702T203119.json"]
+{"level":"info","message":"using active mode","timestamp":"2018-07-02T22:17:21.723Z"}
+{"level":"info","message":"Connecting to eth node http://localhost:8545","timestamp":"2018-07-02T22:17:21.723Z"}
+{"level":"info","message":"using oracle_instance_20180702T203119.json oracle configuration file","timestamp":"2018-07-02T22:17:21.728Z"}
+{"result":{"quotes":{"ETH":0.00000277,"USD":0.001,"BTC":2.3e-7,"EUR":0.0008264},"deployments":{"ethereum":{"public-kovan":{"addressResolver":"0xB7A07BcF2Ba2f2703b24C0691b5278999C59AC7e"},"public-mainnet":{"addressResolver":"0x1d3B2638a7cC9f2CB3D298A3DA7a90B67E5506ed"},"public-ropsten3":{"addressResolver":"0xc03A2615D5efaf5F49F60B7BB6583eaec212fdf1"},"public-rinkeby":{"addressResolver":"0x146500cfd35B22E4A392Fe0aDc06De1a1368Ed48"}}},"distributions":{"rootstock-bridge":{"motd":"","latest":{"version":"0.5.4"}},"eris-bridge":{"motd":"","latest":{"version":"0.1.0"}},"blockapps-bridge":{"motd":"","latest":{"version":"0.5.4"}},"ethereum-bridge":{"motd":"","latest":{"version":"0.5.4"}}},"datasources":{"random":{"sessionPubKeysHash":["0xd937716ea46c0fb8f804f392eb5e00c2667262d1842017eae4f2202943ec1782"]}},"pricing":{"proofs":{"0":{"units":0,"description":"None"},"16":{"units":40,"description":"TLSNotary"},"32":{"units":40,"description":"Android"},"48":{"units":0,"description":"Ledger"}},"datasources":[{"units":10,"proof_types":[0],"name":"IPFS"},{"units":10,"proof_types":[0],"name":"swarm"},{"units":10,"proof_types":[0,16,32],"name":"URL"},{"units":10,"proof_types":[0],"name":"Blockchain"},{"units":10,"proof_types":[0,16,32],"name":"nested"},{"units":30,"proof_types":[0],"name":"WolframAlpha"},{"units":500,"proof_types":[0,16,32],"name":"computation"},{"units":50,"proof_types":[0,48],"name":"random"}]}},"success":true,"level":"debug","message":"check bridge version body result","timestamp":"2018-07-02T22:17:22.331Z"}
+{"context_name":"eth_5C94E99050","latest_block_number":6798,"oar":"0x38840065dee586eb33a77390649af699dbf99f37","node":{"main":"http://localhost:8545","backup":[]},"contracts":{"connector":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/oraclizeConnector.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/oraclizeConnector.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/oraclizeConnector.sol"},"oar":{"binary":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/binary/addressResolver.binary","abi":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/abi/addressResolver.json","source":"/home/ec2-user/cateno_demo/ethereum-bridge/contracts/ethereum-api/connectors/addressResolver.sol"}},"deterministic_oar":true,"deploy_gas":3700000,"account":"0x69081cd1f45afcd26290a8f911392aa7a1034938","mode":"active","key_file":"/home/ec2-user/cateno_demo/ethereum-bridge/config/instance/keys.json","gas_price":20000000000,"onchain_config":{"pricing":[{"name":"IPFS","proof":0,"units":10},{"name":"IPFS","proof":1,"units":10},{"name":"swarm","proof":0,"units":10},{"name":"swarm","proof":1,"units":10},{"name":"URL","proof":0,"units":10},{"name":"URL","proof":1,"units":10},{"name":"URL","proof":16,"units":50},{"name":"URL","proof":17,"units":50},{"name":"URL","proof":32,"units":50},{"name":"URL","proof":33,"units":50},{"name":"Blockchain","proof":0,"units":10},{"name":"Blockchain","proof":1,"units":10},{"name":"nested","proof":0,"units":10},{"name":"nested","proof":1,"units":10},{"name":"nested","proof":16,"units":50},{"name":"nested","proof":17,"units":50},{"name":"nested","proof":32,"units":50},{"name":"nested","proof":33,"units":50},{"name":"WolframAlpha","proof":0,"units":30},{"name":"WolframAlpha","proof":1,"units":30},{"name":"computation","proof":0,"units":500},{"name":"computation","proof":1,"units":500},{"name":"computation","proof":16,"units":540},{"name":"computation","proof":17,"units":540},{"name":"computation","proof":32,"units":540},{"name":"computation","proof":33,"units":540},{"name":"random","proof":0,"units":50},{"name":"random","proof":1,"units":50},{"name":"random","proof":48,"units":50},{"name":"random","proof":49,"units":50}],"base_price":0.00000277},"connector":"0xedff9a7256204b4a4f262d7e502863024b19587d","level":"debug","message":"configuration file","timestamp":"2018-07-02T22:17:22.334Z"}
+{"level":"info","message":"connected to node type Geth/cateno_demo/v1.8.9-unstable-d6ed2f67/linux-amd64/go1.10.2","timestamp":"2018-07-02T22:17:23.364Z"}
+{"level":"warn","message":"Using 0x69081cd1f45afcd26290a8f911392aa7a1034938 to query contracts on your blockchain, make sure it is unlocked and do not use the same address to deploy your contracts","timestamp":"2018-07-02T22:17:24.748Z"}
+{"level":"info","message":"OAR found: 0x38840065dee586eb33a77390649af699dbf99f37","timestamp":"2018-07-02T22:17:24.749Z"}
+{"level":"info","message":"connector found: 0xedff9a7256204b4a4f262d7e502863024b19587d","timestamp":"2018-07-02T22:17:24.749Z"}
+{"level":"info","message":"callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-07-02T22:17:24.749Z"}
+{"level":"debug","message":"starting the bridge log manager...","timestamp":"2018-07-02T22:17:24.760Z"}
+{"level":"debug","message":"latest block seen (config file) 6798","timestamp":"2018-07-02T22:17:24.761Z"}
+{"level":"debug","message":"running reorgListen","timestamp":"2018-07-02T22:17:24.948Z"}
+{"level":"info","message":"Listening @ 0xedff9a7256204b4a4f262d7e502863024b19587d (Oraclize Connector)\n","timestamp":"2018-07-02T22:17:24.949Z"}
+{"level":"info","message":"latest block seen: 6799 - processing 632 new blocks","timestamp":"2018-07-02T22:17:25.226Z"}
+{"level":"info","message":"fetching pending queries from database with oar: 0x38840065dee586eb33a77390649af699dbf99f37 and callback address: 0x69081cd1f45afcd26290a8f911392aa7a1034938","timestamp":"2018-07-02T22:17:25.480Z"}
+{"level":"info","message":"found a total of 0 pending queries","timestamp":"2018-07-02T22:17:25.530Z"}
+{"level":"debug","message":"reorg block target: 7407","timestamp":"2018-07-02T22:17:54.949Z"}
+{"level":"debug","message":"reorg block target: 7407","timestamp":"2018-07-02T22:18:25.132Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7407","timestamp":"2018-07-02T22:18:25.462Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:18:25.965Z"}
+[]
+{"level":"debug","message":"reorg block target: 7408","timestamp":"2018-07-02T22:18:55.466Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7408","timestamp":"2018-07-02T22:18:55.758Z"}
+{"level":"debug","message":"reorg block target: 7409","timestamp":"2018-07-02T22:19:25.773Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7409","timestamp":"2018-07-02T22:19:26.130Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:19:26.620Z"}
+[]
+{"parsed_log":{"contract_address":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","contract_myid":"0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","datasource":"URL","formula":"json(http://54.153.124.94:3002).target","timestamp":0,"gaslimit":200000,"proofType":"0x00","gasPrice":0},"address":"0xedff9a7256204b4a4f262d7e502863024b19587d","blockNumber":7445,"transactionHash":"0xec2d509734abd643a40c4d5e8686c292a7814e631603a34d771ee130ac305edb","transactionIndex":0,"blockHash":"0x917e6c9477a2d86cf2e361fa2389423c7c66070ad7f078bbaaf42fbc0e19d810","logIndex":1,"removed":false,"event":"Log1","args":{"sender":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","cid":"0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","timestamp":{"s":1,"e":0,"c":[0]},"datasource":"URL","arg":"json(http://54.153.124.94:3002).target","gaslimit":{"s":1,"e":5,"c":[200000]},"proofType":"0x00","gasPrice":{"s":1,"e":0,"c":[0]}},"block_timestamp":1530569974,"level":"debug","message":"manageLog, raw log:","timestamp":"2018-07-02T22:19:35.606Z"}
+{"level":"debug","message":"mangeLog isProcessed: false","timestamp":"2018-07-02T22:19:35.609Z"}
+{"level":"debug","message":"cache content","timestamp":"2018-07-02T22:19:35.609Z"}
+{"level":"debug","message":"cache content after true","timestamp":"2018-07-02T22:19:35.610Z"}
+{"parsed_log":{"contract_address":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","contract_myid":"0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","datasource":"URL","formula":"json(http://54.153.124.94:3002).target","timestamp":0,"gaslimit":200000,"proofType":"0x00","gasPrice":0},"address":"0xedff9a7256204b4a4f262d7e502863024b19587d","blockNumber":7445,"transactionHash":"0xec2d509734abd643a40c4d5e8686c292a7814e631603a34d771ee130ac305edb","transactionIndex":0,"blockHash":"0x917e6c9477a2d86cf2e361fa2389423c7c66070ad7f078bbaaf42fbc0e19d810","logIndex":1,"removed":false,"event":"Log1","args":{"sender":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","cid":"0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","timestamp":{"s":1,"e":0,"c":[0]},"datasource":"URL","arg":"json(http://54.153.124.94:3002).target","gaslimit":{"s":1,"e":5,"c":[200000]},"proofType":"0x00","gasPrice":{"s":1,"e":0,"c":[0]}},"block_timestamp":1530569974,"level":"info","message":"new Log1 event","timestamp":"2018-07-02T22:19:35.611Z"}
+{"when":0,"datasource":"URL","query":"json(http://54.153.124.94:3002).target","id2":"1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","proof_type":0,"context":{"name":"eth_5C94E99050","protocol":"eth","type":"blockchain","relative_timestamp":1530569974},"level":"debug","message":"HTTP create query content","timestamp":"2018-07-02T22:19:35.792Z"}
+{"result":{"_timestamp":1530569976,"daterange":[1530569976,1530571776],"interval":3600,"id2":"1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","actions":[],"id":"ca3697e3728f67cf540cfc4c9b7f91019a95ce37fd065b3429c30fe08d633adc","version":3,"_timestamp_creation":1530569976,"context":{"protocol":"eth","relative_timestamp":1530569974,"type":"blockchain","name":"eth_5C94E99050"},"active":true,"hidden":false,"payload":{"conditions":[{"query":"json(http://54.153.124.94:3002).target","proof_type":0,"check_op":"tautology","datasource":"URL","value":null}]}},"success":true,"level":"debug","message":"oraclize HTTP create query body response","timestamp":"2018-07-02T22:19:36.523Z"}
+{"level":"info","message":"new HTTP query created, id: ca3697e3728f67cf540cfc4c9b7f91019a95ce37fd065b3429c30fe08d633adc","timestamp":"2018-07-02T22:19:36.524Z"}
+{"level":"info","message":"checking HTTP query ca3697e3728f67cf540cfc4c9b7f91019a95ce37fd065b3429c30fe08d633adc status in 0 seconds","timestamp":"2018-07-02T22:19:36.531Z"}
+{"level":"info","message":"checking HTTP query ca3697e3728f67cf540cfc4c9b7f91019a95ce37fd065b3429c30fe08d633adc status every 5 seconds...","timestamp":"2018-07-02T22:19:36.531Z"}
+{"result":{"_timestamp":1530569980,"id":"ca3697e3728f67cf540cfc4c9b7f91019a95ce37fd065b3429c30fe08d633adc","daterange":[1530569976,1530571776],"_lock":false,"id2":"1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","actions":[],"interval":3600,"checks":[{"errors":["parsing_helper.wrong_path"],"success":true,"timestamp":1530569980,"results":[""],"proofs":[null],"match":true}],"version":3,"_timestamp_creation":1530569976,"context":{"protocol":"eth","relative_timestamp":1530569974,"type":"blockchain","name":"eth_5C94E99050"},"active":false,"hidden":false,"payload":{"conditions":[{"query":"json(http://54.153.124.94:3002).target","proof_type":0,"check_op":"tautology","datasource":"URL","value":null}]}},"success":true,"level":"info","message":"ca3697e3728f67cf540cfc4c9b7f91019a95ce37fd065b3429c30fe08d633adc HTTP query result: ","timestamp":"2018-07-02T22:19:42.092Z"}
+["parsing_helper.wrong_path"]
+{"query":{},"callback":null,"level":"debug","message":"checkCallbackTx findObject content:","timestamp":"2018-07-02T22:19:42.096Z"}
+{"contract_myid":"0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","contract_address":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","level":"info","message":"sending __callback tx...","timestamp":"2018-07-02T22:19:42.097Z"}
+{"myid":"0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","result":"","proof":null,"proof_type":"0x00","contract_address":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","gas_limit":200000,"gas_price":null,"level":"debug","message":"__callbackWrapper object:","timestamp":"2018-07-02T22:19:42.097Z"}
+{"level":"debug","message":"reorg block target: 7410","timestamp":"2018-07-02T22:19:56.131Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7410","timestamp":"2018-07-02T22:19:56.490Z"}
+{"myid":"0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63","result":"","proof":null,"proof_type":"0x00","contract_address":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","gas_limit":200000,"gas_price":null,"level":"info","message":"contract 0xde38ac475248d457ebe96eab3f3750ff608ccb22 __callback tx sent, transaction hash: 0xb2b9ef0f59f73d16132169797004c193a2f81853ec661e5f3ecd3f53fa90d164","timestamp":"2018-07-02T22:20:07.925Z"}
+{"blockHash":"0x35d042f9f4ac4038b5d083fed9787b7a299827953bd59d74b1570b6767e36c8d","blockNumber":7447,"contractAddress":null,"cumulativeGasUsed":37865,"from":"0x69081cd1f45afcd26290a8f911392aa7a1034938","gasUsed":37865,"logs":[{"address":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","topics":["0x71f1a5645e51a2da828ffcf79cc17da88eb25e1bca8b9dced23210847a4769c1"],"data":"0x00000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000","blockNumber":7447,"transactionHash":"0xb2b9ef0f59f73d16132169797004c193a2f81853ec661e5f3ecd3f53fa90d164","transactionIndex":0,"blockHash":"0x35d042f9f4ac4038b5d083fed9787b7a299827953bd59d74b1570b6767e36c8d","logIndex":0,"removed":false}],"logsBloom":"0x00000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100002000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x3aee3e4e57eb81c84aefddb3f4286e6cfd3b854127a3bb96b9182a2c853c872d","to":"0xde38ac475248d457ebe96eab3f3750ff608ccb22","transactionHash":"0xb2b9ef0f59f73d16132169797004c193a2f81853ec661e5f3ecd3f53fa90d164","transactionIndex":0,"level":"debug","message":"update query content: { myid: '0x1473c6c64c506c6db2f0b9a2f02f8a0acc5258b385586efd15035297311f8f63',\n  result: '',\n  proof: null,\n  proof_type: '0x00',\n  contract_address: '0xde38ac475248d457ebe96eab3f3750ff608ccb22',\n  gas_limit: 200000,\n  gas_price: null }","timestamp":"2018-07-02T22:20:07.927Z"}
+{"level":"debug","message":"reorg block target: 7411","timestamp":"2018-07-02T22:20:26.492Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7411","timestamp":"2018-07-02T22:20:26.855Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:20:27.399Z"}
+[{}]
+{"level":"info","message":"transaction hash 0xb2b9ef0f59f73d16132169797004c193a2f81853ec661e5f3ecd3f53fa90d164 was confirmed in block 0x35d042f9f4ac4038b5d083fed9787b7a299827953bd59d74b1570b6767e36c8d","timestamp":"2018-07-02T22:20:27.908Z"}
+{"level":"debug","message":"reorg block target: 7412","timestamp":"2018-07-02T22:20:56.858Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7412","timestamp":"2018-07-02T22:20:57.179Z"}
+{"level":"debug","message":"reorg block target: 7413","timestamp":"2018-07-02T22:21:27.182Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7413","timestamp":"2018-07-02T22:21:27.529Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:21:28.070Z"}
+[]
+{"level":"debug","message":"reorg block target: 7414","timestamp":"2018-07-02T22:21:57.532Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7414","timestamp":"2018-07-02T22:21:57.835Z"}
+{"level":"debug","message":"reorg block target: 7415","timestamp":"2018-07-02T22:22:27.837Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7415","timestamp":"2018-07-02T22:22:28.156Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:22:28.658Z"}
+[]
+{"parsed_log":{"contract_address":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","contract_myid":"0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","datasource":"URL","formula":"json(http://54.153.124.94:3002/api/qq).target","timestamp":0,"gaslimit":200000,"proofType":"0x00","gasPrice":0},"address":"0xedff9a7256204b4a4f262d7e502863024b19587d","blockNumber":7462,"transactionHash":"0xf8e4ed1a524bc8b86d01f92eb2cd9ef0fbd77ee62eeaa594f3e2d244b8d62188","transactionIndex":0,"blockHash":"0xadd9c5f93f6370e191a4dd9edeb3479860a9fa5f6548f75a18291cd0dfa7b110","logIndex":1,"removed":false,"event":"Log1","args":{"sender":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","cid":"0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","timestamp":{"s":1,"e":0,"c":[0]},"datasource":"URL","arg":"json(http://54.153.124.94:3002/api/qq).target","gaslimit":{"s":1,"e":5,"c":[200000]},"proofType":"0x00","gasPrice":{"s":1,"e":0,"c":[0]}},"block_timestamp":1530570163,"level":"debug","message":"manageLog, raw log:","timestamp":"2018-07-02T22:22:47.842Z"}
+{"level":"debug","message":"mangeLog isProcessed: false","timestamp":"2018-07-02T22:22:47.844Z"}
+{"level":"debug","message":"cache content","timestamp":"2018-07-02T22:22:47.844Z"}
+{"level":"debug","message":"cache content after true","timestamp":"2018-07-02T22:22:47.844Z"}
+{"parsed_log":{"contract_address":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","contract_myid":"0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","datasource":"URL","formula":"json(http://54.153.124.94:3002/api/qq).target","timestamp":0,"gaslimit":200000,"proofType":"0x00","gasPrice":0},"address":"0xedff9a7256204b4a4f262d7e502863024b19587d","blockNumber":7462,"transactionHash":"0xf8e4ed1a524bc8b86d01f92eb2cd9ef0fbd77ee62eeaa594f3e2d244b8d62188","transactionIndex":0,"blockHash":"0xadd9c5f93f6370e191a4dd9edeb3479860a9fa5f6548f75a18291cd0dfa7b110","logIndex":1,"removed":false,"event":"Log1","args":{"sender":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","cid":"0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","timestamp":{"s":1,"e":0,"c":[0]},"datasource":"URL","arg":"json(http://54.153.124.94:3002/api/qq).target","gaslimit":{"s":1,"e":5,"c":[200000]},"proofType":"0x00","gasPrice":{"s":1,"e":0,"c":[0]}},"block_timestamp":1530570163,"level":"info","message":"new Log1 event","timestamp":"2018-07-02T22:22:47.845Z"}
+{"when":0,"datasource":"URL","query":"json(http://54.153.124.94:3002/api/qq).target","id2":"f70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","proof_type":0,"context":{"name":"eth_5C94E99050","protocol":"eth","type":"blockchain","relative_timestamp":1530570163},"level":"debug","message":"HTTP create query content","timestamp":"2018-07-02T22:22:48.035Z"}
+{"result":{"_timestamp":1530570168,"daterange":[1530570168,1530571968],"interval":3600,"id2":"f70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","actions":[],"id":"04c661a202d8511e5afc27d24e12d28d83542554f88acd3c8d41af751bf5888c","version":3,"_timestamp_creation":1530570168,"context":{"protocol":"eth","relative_timestamp":1530570163,"type":"blockchain","name":"eth_5C94E99050"},"active":true,"hidden":false,"payload":{"conditions":[{"query":"json(http://54.153.124.94:3002/api/qq).target","proof_type":0,"check_op":"tautology","datasource":"URL","value":null}]}},"success":true,"level":"debug","message":"oraclize HTTP create query body response","timestamp":"2018-07-02T22:22:48.697Z"}
+{"level":"info","message":"new HTTP query created, id: 04c661a202d8511e5afc27d24e12d28d83542554f88acd3c8d41af751bf5888c","timestamp":"2018-07-02T22:22:48.697Z"}
+{"level":"info","message":"checking HTTP query 04c661a202d8511e5afc27d24e12d28d83542554f88acd3c8d41af751bf5888c status in 0 seconds","timestamp":"2018-07-02T22:22:48.698Z"}
+{"level":"info","message":"checking HTTP query 04c661a202d8511e5afc27d24e12d28d83542554f88acd3c8d41af751bf5888c status every 5 seconds...","timestamp":"2018-07-02T22:22:48.699Z"}
+{"result":{"_timestamp":1530570171,"id":"04c661a202d8511e5afc27d24e12d28d83542554f88acd3c8d41af751bf5888c","daterange":[1530570168,1530571968],"_lock":false,"id2":"f70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","actions":[],"interval":3600,"checks":[{"errors":[],"success":true,"timestamp":1530570171,"results":["10"],"proofs":[null],"match":true}],"version":3,"_timestamp_creation":1530570168,"context":{"protocol":"eth","relative_timestamp":1530570163,"type":"blockchain","name":"eth_5C94E99050"},"active":false,"hidden":false,"payload":{"conditions":[{"query":"json(http://54.153.124.94:3002/api/qq).target","proof_type":0,"check_op":"tautology","datasource":"URL","value":null}]}},"success":true,"level":"info","message":"04c661a202d8511e5afc27d24e12d28d83542554f88acd3c8d41af751bf5888c HTTP query result: ","timestamp":"2018-07-02T22:22:54.270Z"}
+{"query":{},"callback":null,"level":"debug","message":"checkCallbackTx findObject content:","timestamp":"2018-07-02T22:22:54.274Z"}
+{"contract_myid":"0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","contract_address":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","level":"info","message":"sending __callback tx...","timestamp":"2018-07-02T22:22:54.274Z"}
+{"myid":"0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","result":"10","proof":null,"proof_type":"0x00","contract_address":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","gas_limit":200000,"gas_price":null,"level":"debug","message":"__callbackWrapper object:","timestamp":"2018-07-02T22:22:54.274Z"}
+{"level":"debug","message":"reorg block target: 7416","timestamp":"2018-07-02T22:22:58.160Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7416","timestamp":"2018-07-02T22:22:58.474Z"}
+{"myid":"0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c","result":"10","proof":null,"proof_type":"0x00","contract_address":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","gas_limit":200000,"gas_price":null,"level":"info","message":"contract 0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5 __callback tx sent, transaction hash: 0x51c906c06dc5a74ce20bb6f36b176f702bb190dd4eafb2f8f25902864e75f107","timestamp":"2018-07-02T22:23:09.744Z"}
+{"blockHash":"0x2d8041bf7900d3392db5401e22ec5984179e2ab1614146e2c0fa62e93c4326e9","blockNumber":7466,"contractAddress":null,"cumulativeGasUsed":54523,"from":"0x69081cd1f45afcd26290a8f911392aa7a1034938","gasUsed":54523,"logs":[{"address":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","topics":["0x71f1a5645e51a2da828ffcf79cc17da88eb25e1bca8b9dced23210847a4769c1"],"data":"0x000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000023130000000000000000000000000000000000000000000000000000000000000","blockNumber":7466,"transactionHash":"0x51c906c06dc5a74ce20bb6f36b176f702bb190dd4eafb2f8f25902864e75f107","transactionIndex":0,"blockHash":"0x2d8041bf7900d3392db5401e22ec5984179e2ab1614146e2c0fa62e93c4326e9","logIndex":0,"removed":false}],"logsBloom":"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000001000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000","root":"0x46575f1712011e9fa97af385d9ae26540c09286fcd46c8adbd43fa179f29cec0","to":"0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5","transactionHash":"0x51c906c06dc5a74ce20bb6f36b176f702bb190dd4eafb2f8f25902864e75f107","transactionIndex":0,"level":"debug","message":"update query content: { myid: '0xf70db4d0933c1aeaa130b41385d22f0fc39075e0ac3ad1db88e2b83e63828d5c',\n  result: '10',\n  proof: null,\n  proof_type: '0x00',\n  contract_address: '0x08c4c45a4bb9fa5ae9ed1775e54f926b303036c5',\n  gas_limit: 200000,\n  gas_price: null }","timestamp":"2018-07-02T22:23:09.744Z"}
+{"level":"debug","message":"reorg block target: 7417","timestamp":"2018-07-02T22:23:28.477Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7417","timestamp":"2018-07-02T22:23:28.816Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:23:29.334Z"}
+[{}]
+{"level":"info","message":"transaction hash 0x51c906c06dc5a74ce20bb6f36b176f702bb190dd4eafb2f8f25902864e75f107 was confirmed in block 0x2d8041bf7900d3392db5401e22ec5984179e2ab1614146e2c0fa62e93c4326e9","timestamp":"2018-07-02T22:23:29.858Z"}
+{"level":"debug","message":"reorg block target: 7418","timestamp":"2018-07-02T22:23:58.817Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7418","timestamp":"2018-07-02T22:23:59.179Z"}
+{"level":"debug","message":"reorg block target: 7419","timestamp":"2018-07-02T22:24:29.181Z"}
+{"level":"debug","message":"reorg, fetching logs from-to: 7419","timestamp":"2018-07-02T22:24:29.539Z"}
+{"level":"debug","message":"checking invalid __callback transactions","timestamp":"2018-07-02T22:24:29.721Z"}
+[]
