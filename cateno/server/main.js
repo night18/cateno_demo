@@ -141,7 +141,7 @@ Meteor.startup(() => {
 			})
 			.on('confirmation', function(confirmationNumber, receipt){ console.log('confirmation No: '+ confirmationNumber+ " "+ receipt) })
 			.then(function(transaction){
-				console.log("!!!");
+				sleep(10000); //Todo callback
 				dailyWallet.methods.checkMilestone()
 				.send({
 					from: sender,
