@@ -1,6 +1,6 @@
 {
     "context_name": "eth_6827DE0A70",
-    "latest_block_number": 21676,
+    "latest_block_number": 22136,
     "oar": "0x6dc9e7e04ece4cb0b63fb5fd0b0acb27bd0d66c0",
     "node": {
         "main": "http://localhost:8545",

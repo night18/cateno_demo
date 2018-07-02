@@ -1,0 +1,128 @@
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.193.73.58
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.193.73.58
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+your url is: https://cateno.localtunnel.me
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.193.73.58
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.193.73.58
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.153.23.60
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.153.23.60
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.153.23.60
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.153.23.60
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.153.23.60
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.219.160.198
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+your url is: https://cateno.localtunnel.me
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.219.160.198
+/home/ec2-user/n/lib/node_modules/localtunnel/bin/client:65
+        throw err;
+        ^
+
+Error: connection refused: localtunnel.me:46084 (check your firewall settings)
+    at Socket.<anonymous> (/home/ec2-user/n/lib/node_modules/localtunnel/lib/TunnelCluster.js:47:32)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://54.219.160.198
+your url is: https://cateno.localtunnel.me
+[[[[[ ~/cateno_demo/testAPI ]]]]]
+
+=> Started proxy.
+=> Meteor 1.7.0.1 is available. Update this project with 'meteor update'.
+=> Started MongoDB.
+=> Started your app.
+
+=> App running at: http://13.57.36.56

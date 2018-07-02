@@ -1,0 +1,56 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "5618112a8f4d243d72df8237479d77c2a010714e.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/5618112a8f4d243d72df8237479d77c2a010714e.js?meteor_js_resource=true",
+      "size": 593203,
+      "hash": "5618112a8f4d243d72df8237479d77c2a010714e"
+    },
+    {
+      "path": "5618112a8f4d243d72df8237479d77c2a010714e.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/5618112a8f4d243d72df8237479d77c2a010714e.stats.json?meteor_js_resource=true",
+      "size": 26536,
+      "hash": "64931c3d2b6489c6cb5a8c833fd2ca92f2c3bc52"
+    },
+    {
+      "path": "a0ad12fe9a7e15027cc0a48deed0c546d477d037.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/a0ad12fe9a7e15027cc0a48deed0c546d477d037.css?meteor_css_resource=true",
+      "size": 13186,
+      "hash": "a0ad12fe9a7e15027cc0a48deed0c546d477d037"
+    },
+    {
+      "path": "packages/es5-shim/es5-shim-sham.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/es5-shim/es5-shim-sham.js",
+      "size": 107174,
+      "hash": "c75e7bf8f84078ec1aac4edd37d060bb60ef8fc2"
+    },
+    {
+      "path": "packages/es5-shim/es5-shim-sham.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/es5-shim/es5-shim-sham.min.js",
+      "size": 27347,
+      "hash": "f611834e690a71f04d03591a455670d90218faaa"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "0b3c9aafac0d420b03a001eac0478a00946d4d12"
+    }
+  ]
+}

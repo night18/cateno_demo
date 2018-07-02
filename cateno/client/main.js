@@ -20,15 +20,16 @@ Template.login.events({
 					console.error(error);
 				}else {
 					if(usrname == "company"){
-						Meteor.call('getEthAddress', usrname, function(err, result){
-							if(!err){
-								// console.log(result);
-								cookies.set('address', result);
-								Router.go('/dashboardc'); 
-							}else {
-								console.log(err);
-							}
-						});
+						// Meteor.call('getEthAddress', usrname, function(err, result){
+						// 	if(!err){
+						// 		// console.log(result);
+						// 		cookies.set('address', result);
+						// 		Router.go('/dashboardc'); 
+						// 	}else {
+						// 		console.log(err);
+						// 	}
+						// });
+						Router.go('/dashboardc'); 
 					}else if(usrname == "investor"){
 						Router.go('/dashboardi'); 
 					}
