@@ -43,8 +43,7 @@ sleep 3
 #
 # Logs at: /home/ec2-user/cateno_demo/ethereum-bridge/bridge.log
 cd /home/ec2-user/cateno_demo/ethereum-bridge/
-forever start bridge.js --instance oracle_instance_20180622T061241.json
-
+forever start bridge.js --instance oracle_instance_20180628T093334.json
 #
 # Show status of daemon processes
 #
