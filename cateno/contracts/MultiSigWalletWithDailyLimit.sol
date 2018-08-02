@@ -39,6 +39,9 @@ contract MultiSigWalletWithDailyLimit is MultiSigWallet, Milestone {
         dailyLimit = _dailyLimit;
     }
     
+    //Fallback Function
+    function() public payable{}
+    
     /// @dev Allows to change the daily limit. Transaction has to be sent by wallet.
     /// @param _dailyLimit Amount in wei.
     function changeDailyLimit(uint _dailyLimit)
@@ -72,6 +75,8 @@ contract MultiSigWalletWithDailyLimit is MultiSigWallet, Milestone {
             }
         }
     }
+    
+   
 
     /// @dev Allows the executor to ask the request to submit a transaction.
     /// @param destination Transaction target address.

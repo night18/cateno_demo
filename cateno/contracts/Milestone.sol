@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-import "github.com/oraclize/ethereum-api/oraclizeAPI.sol";
+import "./oraclizeAPI.sol";
 
 contract Milestone is usingOraclize {
 
@@ -8,15 +8,15 @@ contract Milestone is usingOraclize {
     event LogPriceUpdated(string price);
     event LogNewOraclizeQuery(string description);
 
-    function Milestone() payable {
+    function Milestone() payable{
         LogConstructorInitiated("Constructor was initiated. Call 'updatePrice()' to send the Oraclize Query.");
-        OAR = OraclizeAddrResolverI(0x6Dc9e7e04ECe4Cb0b63Fb5fD0b0aCb27bd0d66c0);
+        OAR = OraclizeAddrResolverI(0xb8e72A4c11AA00073E7C2ED39ca513dc8bd0a291);
     }
 
     function()public payable{}
 
     function __callback(bytes32 myid, string result) {
-        if (msg.sender != oraclize_cbAddress()) revert();
+        // if (msg.sender != oraclize_cbAddress()) revert();
         EURGBP = parseInt(result);
         LogPriceUpdated(result);
     }
@@ -26,7 +26,7 @@ contract Milestone is usingOraclize {
             LogNewOraclizeQuery("Oraclize query was NOT sent, please add some ETH to cover for the query fee");
         } else {
             LogNewOraclizeQuery("Oraclize query was sent, standing by for the answer..");
-            oraclize_query("URL", "json(https://3618a6b5.ngrok.io/api/qq).target");
+            oraclize_query("URL", "json(http://cateno.localtunnel.me/api/rr).target");
         }
     }
 }
