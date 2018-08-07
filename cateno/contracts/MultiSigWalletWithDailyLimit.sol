@@ -31,10 +31,11 @@ contract MultiSigWalletWithDailyLimit is MultiSigWallet, Milestone {
      * @param _supervisors List of initial supervisors.
      * @param _dailyLimit Amount in "wei", which can be withdrawn without confirmations on a daily basis.
      */
-    function MultiSigWalletWithDailyLimit(address _executor, address[] _supervisors, uint _required, uint _dailyLimit)
+    function MultiSigWalletWithDailyLimit(address _executor, address[] _supervisors, uint _required, uint _dailyLimit, string _apiurl)
         public
         payable
         MultiSigWallet(_executor, _supervisors, _required)
+        Milestone(_apiurl)
     {
         dailyLimit = _dailyLimit;
     }
@@ -100,7 +101,7 @@ contract MultiSigWalletWithDailyLimit is MultiSigWallet, Milestone {
         public
     {
         for(uint _Id = 0 ; _Id < hasmilestone.length; _Id++){
-            if(EURGBP >= milestone_target[hasmilestone[_Id]]){
+            if(stone >= milestone_target[hasmilestone[_Id]]){
                executeMilestoneTransaction(hasmilestone[_Id]);
             }
         }
